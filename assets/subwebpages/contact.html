@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel the World | Contact Us </title>
+    <!-- output is our generated tailwind css -->
+    <link rel="stylesheet" href="../../output.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="../../assets/effect-utils/custom-effect.css"/>
+
+    <script src="../../app.js" defer></script>
+</head>
+<body class="">
+    <header class="w-screen flex justify-center z-50 fixed top-0 left-0 text-white bg-top-color-bottom-transparent">
+        <!-- Desktop -->
+        <nav class="desktop justify-between hidden p-3 sm:flex container md:flex sm:mx-auto">
+            <a href="../../index.html" class="font-semibold">Logo</a>
+            <ul class="flex gap-10 ">
+                <li>
+                    <button class="font-semibold" id="discovery-btn">Discover +</button>
+                    <section id="discover-ul-desktop" class="hidden fixed bg-transparent--black left-0 top-0 w-screen h-screen p-4 overflow-y-auto">
+                        <button class="bg-white font-semibold text-xl fixed bottom-4 right-4 rounded-full flex p-5 shadow-lg text-black z-50" id="nav-close-btn-desktop">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                        <ul class="">
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Seasonal Traveller<span>+</span></button>
+                                    
+                                    <ul class="grid grid-cols-4 overflow-y-auto p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/summer.html" class="relative card-link">
+                                                <img src="../../assets/seasons/summer.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Summer Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/autumn.html" class="relative card-link">
+                                                <img src="../../assets/seasons/autumn.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Autumn Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/winter.html" class="relative card-link">
+                                                <img src="../../assets/seasons/winter.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Winter Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/spring.html" class="relative card-link">
+                                                <img src="../../assets/seasons/spring.jpeg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Spring Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Trending Places<span>+</span></button>
+                                    <ul class="grid grid-cols-4 overflow-y-auto p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/japan.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/japan/shrine-gates.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition treending flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Japan</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/italy.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/italy/culture.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition treending flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Italy</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/egypt.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/egypt/egyptian.jpeg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex treending justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Egypt</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/paris.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/paris/lights.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex treending justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Paris</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Travel Themes<span>+</span></button>
+                                    <ul class="grid grid-cols-4 overflow-y-hidden p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/traveller/solo-traveller.html" class="relative card-link">
+                                                <img src="../../assets/home-page/type-traveller/solo-traveller.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition theme-traveller flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Solo Travel</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/traveller/family-vacation.html" class="relative card-link">
+                                                <img src="../../assets/home-page/type-traveller/family-vacation.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition theme-traveller flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Family Vacations</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/traveller/honeymoon-spots.html" class="relative card-link">
+                                                <img src="../../assets/home-page/type-traveller/honeymoon.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition flex theme-traveller justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Honeymoon Spots</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            
+                            <li>
+                                <article>
+                                    <h5 class="text-2xl">Hidden Gems<span>+</span></h5>
+                                    <ul class="grid grid-cols-4 overflow-y-hidden p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/Chefchaouen.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/Chefchaouen.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Chefchaouen</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/HallState.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/hallstate.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">HallState</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/Jioufen.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/Jioufen.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Jioufen</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/Sibiu.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/sibiu.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Sibiu</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+                <li>
+                    <a href="../../assets/subwebpages/about.html" class="font-semibold">Who Are We</a>
+                </li>
+                <li>
+                    <a href="../../assets/subwebpages/community-blog/blog.html" class="font-semibold">Our Community</a>
+                </li>
+            </ul>
+            <ul class="flex gap-4">
+                <li>
+                    <button class="cursor-pointer">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../assets/subwebpages/booking.html" class="font-semibold p-1 outline-white text-white rounded-full ">
+                        Start Planning
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Mobile -->
+        <nav class="mobile-nav flex justify-between p-3 sm:hidden w-full ">
+            <button class="z-10" id="burger-menu">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <button class="z-10 hidden sm:hidden" id="cancle-menu-button">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <ul class="nav-transition fixed -left-96 top-0 h-screen w-screen bg-black z-0 flex flex-col pt-28 pb-5 px-6 gap-4 overflow-y-auto" id="mobile-nav-items">
+                <li class="border-b-2">
+                    <button class="pb-1 flex gap-1 font-semibold main-nav-btn" data-page="discover-btn">
+                        Discover 
+                        <span>
+                            +
+                        </span>
+                    </button>
+                    <ul class="pl-3 flex flex-col gap-3 h-0 transition-height overflow-y-auto main-dropdown" id="discover-btn">
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="seasonal-traveller">Seasonal Travel <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="seasonal-traveller">
+                                    <li><a href="./summer.html">Summer</a></li>
+                                    <li><a href="./autumn.html">Autumn</a></li>
+                                    <li><a href="./winter.html">Winter</a></li>
+                                    <li><a href="./spring.html">Springs</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="trendy-places">Trending Places <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="trendy-places">
+                                    <li><a href="../../assets/subwebpages/japan.html">Japan</a></li>
+                                    <li><a href="../../assets/subwebpages/egypt.html">Egypt</a></li>
+                                    <li><a href="../../assets/subwebpages/italy.html">Italy</a></li>
+                                    <li><a href="../../assets/subwebpages/paris.html">Paris</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="travel-themes">Travel Themes <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="travel-themes">
+                                    <li><a href="../subwebpages/traveller/solo-traveller.html">Solo Traveller</a></li>
+                                    <li><a href="../subwebpages/traveller/honeymoon-spots.html">Honeymoon Spots</a></li>
+                                    <li><a href="../subwebpages/traveller/family-vacation.html">Family Vacation</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="hidden-gems">Hidden Gems <span>+</span></button>
+
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown mb-3" id="hidden-gems">
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/Chefchaouen.html">
+                                            Chefchaouen
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/HallState.html">
+                                            HallState
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/Jioufen.html">
+                                            Jioufen
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/Sibiu.html">
+                                            Sibiu
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="border-b-2">
+                    <a href="../../assets/subwebpages/about.html" class="font-semibold pb-1">Who Are We</a>
+                </li>
+                <li class="border-b-2">
+                    <a href="../../assets/subwebpages/community-blog/blog.html" class="font-semibold pb-1">Our Community</a>
+                </li>
+            </ul>
+
+            <a href="" class="z-10">Logo</a>
+            
+            <ul class="flex gap-3 z-10">
+                <li>
+                    <button>
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+
+    <main class="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white min-h-screen font-sans">
+         <!-- Page Container -->
+    <div class="sm:max-w-7xl mx-auto p-4 md:p-8">
+
+        <!-- Header -->
+        <section class="text-left mt-4 sm:mt-2 sm:text-center py-6">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+            <p class="text-lg md:text-xl text-gray-300">We'd love to hear from you! Let’s make your travel dreams come true.</p>
+        </section>
+
+        <!-- Contact Form and Information -->
+        <div class="grid grid-cols-1 justify-center items-center sm:grid-cols-2 md:space-x-8 space-y-6 md:space-y-0">
+
+            <!-- Contact Information -->
+            <div class="space-y-4 md:text-left">
+                <h2 class="text-2xl font-semibold">Our Contact Details</h2>
+                <p class="text-gray-400">Reach out directly or use the form to send us a message.</p>
+                <div class="space-y-2">
+                    <p><strong>Email:</strong> <a href="" class="hover:underline text-indigo-400">
+
+                        info@travelTheWorld.com</a></p>
+                    <p><strong>Phone:</strong> <a href="" class="hover:underline text-indigo-400">+44 20 7946 0000</a></p>
+                    <p><strong>Location: </strong><span class="hover:underline text-indigo-400">22 Kensington Gardens, London, United Kingdom, W8 4QP</span></p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class= "bg-gray-800 p-6 rounded-lg shadow-lg contact-form hover-glow transition duration-300">
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-2 px-6 rounded-lg bg-indigo-600 hover:bg-indigo-700 font-semibold">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="mt-8 text-center space-x-4">
+            <a href="#" class="text-gray-300 hover:text-indigo-400 transition-colors">Facebook</a>
+            <a href="#" class="text-gray-300 hover:text-indigo-400 transition-colors">Instagram</a>
+            <a href="#" class="text-gray-300 hover:text-indigo-400 transition-colors">Twitter</a>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

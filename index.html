@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel The World</title>
+    <!-- output is our generated tailwind css -->
+    <link rel="stylesheet" href="./output.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="./assets/effect-utils/custom-effect.css"/>
+</head>
+<body>
+    <header class="w-screen flex justify-center z-50 fixed top-0 left-0 text-white bg-top-color-bottom-transparent">
+        <!-- Desktop -->
+        <nav class="desktop justify-between hidden p-3 sm:flex container md:flex sm:mx-auto">
+            <a href="./index.html" class="font-semibold">Logo</a>
+            <ul class="flex gap-10 ">
+                <li>
+                    <button class="font-semibold" id="discovery-btn">Discover +</button>
+                    <section id="discover-ul-desktop" class="hidden fixed bg-transparent--black left-0 top-0 w-screen h-screen p-4 overflow-y-auto">
+                        <button class="bg-white font-semibold text-xl fixed bottom-4 right-4 rounded-full flex p-5 shadow-lg text-black z-50" id="nav-close-btn-desktop">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                        <ul class="">
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Seasonal Traveller<span>+</span></button>
+                                    
+                                    <ul class="grid grid-cols-4 overflow-y-auto p-4">
+                                        <li class="relative">
+                                            <a href="./assets/seasons/summer.html" class="relative card-link">
+                                                <img src="./assets/seasons/summer.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Summer Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="./assets/seasons/autumn.html" class="relative card-link">
+                                                <img src="./assets/seasons/autumn.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Autumn Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="./assets/seasons/winter.html" class="relative card-link">
+                                                <img src="./assets/seasons/winter.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Winter Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="./assets/seasons/spring.html" class="relative card-link">
+                                                <img src="./assets/seasons/spring.jpeg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Spring Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Trending Places<span>+</span></button>
+                                    <ul class="grid grid-cols-4 overflow-y-auto p-4">
+                                        <li class="relative">
+                                            <a href="./assets/subwebpages/japan.html" class="relative card-link">
+                                                <img src="./assets/home-page/start-your-journey/japan/shrine-gates.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition treending flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Japan</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="./assets/subwebpages/italy.html" class="relative card-link">
+                                                <img src="./assets/home-page/start-your-journey/italy/culture.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition treending flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Italy</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="./assets/subwebpages/egypt.html" class="relative card-link">
+                                                <img src="./assets/home-page/start-your-journey/egypt/egyptian.jpeg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex treending justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Egypt</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="./assets/subwebpages/paris.html" class="relative card-link">
+                                                <img src="./assets/home-page/start-your-journey/paris/lights.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex treending justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Paris</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Travel Themes<span>+</span></button>
+                                    <ul class="grid grid-cols-4 overflow-y-hidden p-4">
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/type-traveller/solo-traveller.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition theme-traveller flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Solo Travel</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/type-traveller/family-vacation.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition theme-traveller flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Family Vacations</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/type-traveller/honeymoon.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition flex theme-traveller justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Honeymoon Spots</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            
+                            <li>
+                                <article>
+                                    <h5 class="text-2xl">Hidden Gems<span>+</span></h5>
+                                    <ul class="grid grid-cols-4 overflow-y-hidden p-4">
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/lesser-known-destinations/Chefchaouen.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Chefchaouen</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/lesser-known-destinations/hallstate.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">HallState</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/lesser-known-destinations/Jioufen.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Jioufen</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="" class="relative card-link">
+                                                <img src="./assets/home-page/lesser-known-destinations/sibiu.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Sibiu</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <h5 class="text-2xl">Eco-Friendly Travel<span>+</span></h5>
+                                    <ul></ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a href="" class="text-2xl">Budget Travel<span>+</span></a>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+                
+                <li>
+                    <a href="./assets/subwebpages/about.html" class="font-semibold">Who Are We</a>
+                </li>
+                <li>
+                    <a href="./assets/subwebpages/community-blog/blog.html" class="font-semibold">Our Community</a>
+                </li>
+            </ul>
+            <ul class="flex gap-4">
+                <li>
+                    <button class="cursor-pointer">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./assets/subwebpages/booking.html" class="font-semibold p-1 outline-white text-white rounded-full ">
+                        Start Planning
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Mobile -->
+        <nav class="mobile-nav flex justify-between p-3 sm:hidden w-full ">
+            <button class="z-10" id="burger-menu">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <button class="z-10 hidden sm:hidden" id="cancle-menu-button">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <ul class="nav-transition fixed -left-96 top-0 h-screen w-screen bg-black z-0 flex flex-col pt-28 pb-5 px-6 gap-4 overflow-y-auto" id="mobile-nav-items">
+                <li class="border-b-2">
+                    <button class="pb-1 flex gap-1 font-semibold main-nav-btn" data-page="discover-btn">
+                        Discover 
+                        <span>
+                            +
+                        </span>
+                    </button>
+                    <ul class="pl-3 flex flex-col gap-3 h-0 transition-height overflow-y-auto main-dropdown" id="discover-btn">
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="seasonal-traveller">Seasonal Travel <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="seasonal-traveller">
+                                    <li><a href="./assets/seasons/summer.html">Summer</a></li>
+                                    <li><a href="./assets/seasons/autumn.html">Autumn</a></li>
+                                    <li><a href="./assets/seasons/winter.html">Winter</a></li>
+                                    <li><a href="./assets/seasons/spring.html">Springs</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="trendy-places">Trending Places <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="trendy-places">
+                                    <li><a href="./assets/subwebpages/japan.html">Japan</a></li>
+                                    <li><a href="./assets/subwebpages/egypt.html">Egypt</a></li>
+                                    <li><a href="./assets/subwebpages/italy.html">Italy</a></li>
+                                    <li><a href="./assets/subwebpages/paris.html">Paris</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="travel-themes">Travel Themes <span>+</span></button>
+                                <ul class="h-0  overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="travel-themes">
+                                    <li><a href="">Solo Traveller</a></li>
+                                    <li><a href="">Honeymoon Spots</a></li>
+                                    <li><a href="">Family Vacation</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="hidden-gems">Hidden Gems <span>+</span></button>
+
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown mb-3" id="hidden-gems">
+                                    <li class="relative">
+                                        <a href="">
+                                            Chefchaouen
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="">
+                                            HallState
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="">
+                                            Jioufen
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="">
+                                            Sibiu
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="border-b-2">
+                    <a href="./assets/subwebpages/about.html" class="font-semibold pb-1">Who Are We</a>
+                </li>
+                <li class="border-b-2">
+                    <a href="./assets/subwebpages/community-blog/blog.html" class="font-semibold pb-1">Our Community</a>
+                </li>
+            </ul>
+
+            <a href="" class="z-10">Logo</a>
+            
+            <ul class="flex gap-3 z-10">
+                <li>
+                    <button>
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="flex flex-col justify-center items-center relative h-screen w-screen z-0 gap-5 sm:gap-6 ">
+            <h1 class="z-10 text-4xl font-bold text-white text-shadow-medium text-center md:text-7xl">
+                The World At Your <br>Finger Tips
+            </h1>
+
+            <a href="./assets/subwebpages/where-to-travel.html" class="z-10 p-2 w-1/3 text-center sm:p-5 rounded-full outline-white text-white">Be Inspired</a>
+            <a href="./assets/subwebpages/booking.html" class="z-10 p-2 w-1/3 text-center sm:p-5 rounded-full outline-white text-white sm:hidden">Book A Trip</a>
+
+            <video class="absolute inset-0 z-0 w-full h-full object-cover" muted autoplay>
+                <source src="./assets/home-page/hero-video.mp4">
+            </video>
+        </section>
+        
+        <!-- Engageing section -->
+        <section class="container mx-auto xl:h-screen mt-8 flex flex-col justify-center align-center gap-5 sm:gap-20">
+            <!-- Word From Us -->
+            <section class="flex flex-col justify-center items-center order-2 sm:order-1">
+                <h2 class="text-center font-sans p-5 font-semibold text-xl sm:text-4xl">A Word From Us</h2>
+                <p class="text-center px-7 md:px-0 md:w-1/2">
+                    "Ready to explore the world in unmatched luxury? At Travel the World, we don’t just plan trips we craft 
+                    unforgettable journeys tailored to your every desire. Whether you're craving a secluded island escape or 
+                    a first-class adventure across continents, your dream getaway starts here. Let’s make your next destination 
+                    as extraordinary as you are."
+                </p>
+                <a href="" class="outline-black rounded-full p-3 mt-3 cursor-pointer">Contact Us</a>
+            </section>
+            <!-- Partners -->
+            <section class="order-1 sm:order-0">
+                <h2 class="text-center font-sans p-5 font-semibold text-xl sm:text-4xl">Trusted By Partners</h2>
+                <div class="overflow-x-hidden">
+                    <ul class="flex sm:justify-evenly sm:items-center gap-3 w-full filter grayscale logo-auto-run">
+                        <li><img src="./assets/home-page/partner-logos/IATA.svg" alt=""></li>
+                        <li><img src="./assets/home-page/partner-logos/TRAVEL-LESURE.svg" alt=""></li>
+                        <li><img src="./assets/home-page/partner-logos/virtuous-member.svg" alt=""></li>
+                        <li><img src="./assets/home-page/partner-logos/pentravel-logo@1x.png" alt="pentravel"></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <!-- Your Journey -->
+        <section class="container mx-auto mt-10">
+            <h2 class="text-center font-sans p-5 font-semibold text-xl sm:text-4xl mt-8">Start Your Journey</h2>
+
+            <!-- buttons -->
+            <ul class="flex justify-center gap-5 relaive">
+                <li class="relative">
+                    <button>Most Popular</button>
+                </li>
+                <li class="relative">
+                    <button>By Traveller</button>
+                </li>
+                <li class="relative">
+                    <button>Travel By Month</button>
+                </li>
+            </ul>
+
+            <!-- UL Cards -->
+            <ul class="grid grid-cols-1 sm:grid-cols-3 mt-8 p-3 gap-3">
+                <a href="./assets/subwebpages/italy.html">
+                    <li class="h-64 w-full flex flex-col justify-end p-3 background-image-one bg-no-repeat background-zoom-transition rounded-2xl bg-cover">
+                        <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Italy</h3>
+                        <p class="text-sm text-white text-shadow-medium">Price: R0.00</p>
+                    </li>
+                </a>
+                
+                <a href="./assets/subwebpages/japan.html">
+                    <li class="h-64 w-full flex flex-col justify-end p-3 background-image-two background-zoom-transition bg-no-repeat rounded-2xl bg-cover">
+                        <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Japan</h3>
+                        <p class="text-sm text-white text-shadow-medium">Price: R0.00</p>
+                    </li>
+                </a>
+                
+                <a href="./assets/subwebpages/new-zealand.html">
+                    <li class="h-64 w-full flex flex-col justify-end p-3 background-image-three background-zoom-transition rounded-2xl bg-no-repeat bg-cover">
+                        <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">New Zealand</h3>
+                        <p class="text-sm text-white">Price: R0.00</p>
+                    </li>
+                </a>
+                
+                <a href="./assets/subwebpages/cambodia.html">
+                    <li class="h-64 w-full flex flex-col justify-end p-3 background-image-four background-zoom-transition rounded-2xl bg-no-repeat bg-cover">
+                        <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Cambodia</h3>
+                        <p class="text-sm text-white text-shadow-medium">Price: R0.00</p>
+                    </li>
+                </a>
+                
+                <a href="./assets/subwebpages/egypt.html">
+                    <li class="h-64 w-full flex flex-col justify-end p-3 background-image-five background-zoom-transition rounded-2xl  bg-no-repeat bg-cover">
+                        <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Egypt</h3>
+                        <p class="text-sm text-white text-shadow-medium">Price: R0.00</p>
+                    </li>
+                </a>
+                
+                <a href="./assets/subwebpages/paris.html">
+                    <li class="h-64 w-full flex flex-col justify-end p-3 background-image-six background-zoom-transition rounded-2xl bg-no-repeat bg-cover">
+                        <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Paris</h3>
+                        <p class="text-sm text-white text-shadow-medium">Price: R0.00</p>
+                    </li>
+                </a>
+                
+            </ul>
+        </section>
+
+        <!-- Your Experiences -->
+        <section class="container mx-auto mt-8">
+            <h2 class="text-center font-sans p-5 font-semibold text-xl sm:text-4xl">Our Interesting Trips</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-4 p-3 gap-3">    
+                <li class="border h-64 w-full flex flex-col justify-end p-3 background-image-seven bg-no-repeat background-zoom-transition rounded-2xl bg-cover">
+                    <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Journey To Ancient Greece</h3>
+                    <a href="./assets/subwebpages/greece.html" class="outline-white text-white rounded-full w-1/2 sm:w-full text-center mt-2 p-1">Be Inspired</a>
+                </li>
+    
+                <li class="border h-64 w-full flex flex-col justify-end p-3 background-image-eight bg-no-repeat background-zoom-transition rounded-2xl bg-cover">
+                    <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Journey To Mount Golgotha</h3>
+                    <a href="./assets/subwebpages/mount-golgotha.html" class="outline-white text-white rounded-full w-1/2 sm:w-full text-center mt-2 p-1">Be Inspired</a>
+                </li>
+        
+                <li class="border h-64 w-full flex flex-col justify-end p-3 background-image-nine bg-no-repeat background-zoom-transition rounded-2xl bg-cover">
+                    <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Journey Into The Ancient Waterfall</h3>
+                    <a href="./assets/subwebpages/waterfall.html" class="outline-white text-white rounded-full w-1/2 sm:w-full text-center mt-2 p-1">Be Inspired</a>
+                </li>
+        
+                <li class="border h-64 w-full flex flex-col justify-end p-3 background-image-ten bg-no-repeat background-zoom-transition rounded-2xl bg-cover">
+                    <h3 class="text-lg text-white sm:text-xl md:text-2xl text-shadow-medium">Journey To Morocco</h3>
+                    <a href="./assets/subwebpages/morocco.html" class="outline-white text-white rounded-full w-1/2 sm:w-full text-center mt-2 p-1">Be Inspired</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- what people think -->
+        <section class="container mx-auto mt-8 ">
+            <h2 class="text-center font-sans p-5 font-semibold text-xl sm:text-4xl">Testamonials</h2>
+            <ul class="overflow-x-auto flex flex-auto space-x-4 pb-5 px-3">
+                <li class="flex-grow-0 flex-shrink-0 p-4 border">
+                    <img src="" alt="">
+                    <h3 class="border-l-2 pl-1 border-red-600">Amanda Stevens</h3>
+                    <p class="w-72 text-xs mt-2">
+                        "From the moment I contacted Travel the World, I knew I was in expert hands. 
+                        My husband and I had been dreaming of a luxurious island getaway, but we didn't 
+                        know where to start. The team listened to our every wish and planned a trip to the 
+                        Maldives that surpassed anything we could’ve imagined. Every detail was handled with 
+                        such care—from the private villa with its own pool to our personalized sunset dinner 
+                        on the beach. Thanks to Travel the World, we had the romantic escape of a lifetime. 
+                        They truly know how to deliver luxury!"
+                    </p>
+                </li>
+                <li class="flex-grow-0 flex-shrink-0 p-4 border">
+                    <img src="" alt="">
+                    <h3 class="border-l-2 pl-1 border-red-600">Jonathan Miller</h3>
+                    <p class="w-72 text-xs mt-2">
+                        "I’ve traveled quite a bit for work, but I wanted a trip that was truly special for my 
+                        family’s first vacation abroad. Travel the World helped me plan an immersive cultural 
+                        tour through Europe, visiting France, Italy, and Spain. Our private guides were incredible, 
+                        taking us off the beaten path to experience local culture like never before. They even 
+                        arranged for my son to attend a pasta-making class in Tuscany! It was luxury, but also 
+                        deeply personal. Every member of my family came back with memories we will cherish 
+                        forever."
+                    </p>
+                </li>
+                <li class="flex-grow-0 flex-shrink-0 p-4 border">
+                    <img src="" alt="">
+                    <h3 class="border-l-2 pl-1 border-red-600">Leila Patel</h3>
+                    <p class="w-72 text-xs mt-2">
+                        "I needed a break from my fast-paced life, and Travel the World designed the perfect 
+                        wellness retreat for me. They suggested a hidden resort in Bali, where I spent a week 
+                        in total tranquility. From yoga at sunrise to holistic spa treatments overlooking the 
+                        ocean, everything was perfectly curated for relaxation and rejuvenation. I had never 
+                        felt so taken care of, even while traveling solo. Their attention to my personal 
+                        preferences was extraordinary. This wasn't just a vacation, it was a life-changing 
+                        experience."
+                    </p>
+                </li>
+                <li class="flex-grow-0 flex-shrink-0 p-4 border">
+                    <img src="" alt="">
+                    <h3 class="border-l-2 pl-1 border-red-600">William & Sophia Turner</h3>
+                    <p class="w-72 text-xs mt-2">
+                        "As someone who travels frequently for business, I rarely have time to enjoy the destinations I visit. 
+                        Travel the World completely changed that for me. They customized a business-leisure package for my trip 
+                        to Japan, balancing work and relaxation perfectly. I was able to attend my meetings, but they also arranged 
+                        a serene stay at a ryokan, visits to traditional tea houses, and a guided tour of Kyoto’s temples. It was the 
+                        perfect blend of luxury and efficiency. I can’t imagine traveling any other way now."
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- what we stand for -->
+        <div class="about-background relative bg-no-repeat bg-cover grid item-center" aria-label="what we stand for divider">
+            <section class="container mx-auto mt-8 flex flex-col justify-center items-center gap-3 sm:p-10 sm:h-80 text-white p-3 relative">
+                <h1 class="text-shadow-medium font-semibold sm:text-lg uppercase">Our Purpose</h1>
+                <p class="px-4 md:w-full text-center text-xl sm:text-3xl sm:w-3/4 sm:gap-5 text-shadow-medium">Inspiring people through
+                    remarkable travel experiences
+                </p>
+                <a href="./assets/subwebpages/about.html" class="p-2 sm:p-3 outline-white rounded-full text-center my-5 z-10">About Us</a>
+                
+            </section>
+            <div class="background-gradient-white-fade absolute left-0 bottom-0 w-full hidden sm:h-24"></div>
+        </div>
+
+        <section class="sm:mt-3 h-screen container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 justify-center relative">
+            <section class="lg:order-2 background-about-us-two bg-no-repeat bg-cover bg-blend-overlay sm:bg-opacity-0 bg-gray-600 p-1 flex justify-center items-center flex-col sm:justify-center sm: gap-3 sm:items-start text-white sm:text-black h-full">
+                <h2 class="font-semibold uppercase text-center sm:text-left sm:text-6xl">Why we do what we do</h2>
+                <p class="text-center sm:text-left sm:text-lg sm:w-1/2">
+                    To create lifelong memories that reflect the luxury, comfort, and adventure each traveler dreams of
+                </p>
+                <a href="./assets/subwebpages/about.html" class="mt-3 flex gap-1 sm:text-sm">
+                    Learn More
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </section>
+            <img src="./assets/home-page/about-us/Tom-Marchant.jpg" alt="" class=" rounded-2xl w-full h-full object-cover lg:order-2 border hidden sm:block">
+        </section>
+
+        <section class="mt-8 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 lg:h-screen justify-center relative">
+            <section class="lg:order-2 bg-no-repeat bg-cover bg-blend-overlay p-1 flex justify-center items-center flex-col sm:justify-center sm: gap-3 sm:items-start text-black sm:text-black h-full">
+                <h2 class="font-semibold uppercase text-center sm:text-left sm:text-6xl">Our guide to luxury travel</h2>
+                <p class="text-center sm:text-left sm:text-lg ">
+                    Luxury holidays mean something different to everyone. For some, it's hiking in solitude 
+                    through a remote desert; for others, it's sipping cocktails on a private yacht in the 
+                    Mediterranean. Whatever your style, our seasoned travelers curate bespoke experiences 
+                    just for you. Whether it's a secluded villa in Tuscany or an exclusive African safari, 
+                    we'll craft a journey that exceeds your expectations.
+                </p>
+                <a href="https://www.youtube.com/watch?v=kYXiegTXsEs" class="mt-3 flex gap-1 sm:text-sm">
+                    Watch Film
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </section>
+            <img src="./assets/home-page/about-us/guid-to-travel.jpg" alt="" class="w-full h-full object-cover lg:order-1 border hidden sm:block rounded-2xl">
+        </section>
+
+        <div class="background-sand bg-cover bg-no-repeat relative" role="article">
+            <section class="mt-8 container mx-auto flex flex-col items-center justify-center gap-5 p-7 text-white h-72">
+                <h2 class="font-semibold uppercase text-center sm:text-2xl sm:w-1/3">Are You Ready To Plan Your Next Adventure</h2>
+                <a href="./assets/subwebpages/booking.html" class="outline-white p-1 text-center w-1/2 font-semibold rounded-full sm:w-16 sm:text-xl z-10">Yes!</a>
+            </section>
+            <div class="background-black-gradient-faded absolute bottom-0 left-0 h-1/3 w-full"></div>
+        </div>       
+    </main>
+
+    <footer class="bg-black p-4">
+        <!-- partners -->
+        <ul class="flex justify-evenly items-center container mx-auto gap-3 p-3 sm:p-7 filter grayscale">
+            <li><img src="./assets/home-page/partner-logos/IATA.svg" alt=""></li>
+            <li><img src="./assets/home-page/partner-logos/TRAVEL-LESURE.svg" alt=""></li>
+            <li><img src="./assets/home-page/partner-logos/virtuous-member.svg" alt=""></li>
+            <li><img src="./assets/home-page/partner-logos/pentravel-logo@1x.png" alt="pentravel"></li>
+        </ul>
+
+        <!-- Catagory links -->
+        <section class="grid sm:grid-cols-4 container mx-auto">
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">Travel The World</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="./assets/subwebpages/booking.html" class="hover:text-white">Book A Trip</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/contact.html" class="hover:text-white">Get In Touch</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">Useful Information</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="./assets/subwebpages/about.html" class="hover:text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/FAQ.html" class="hover:text-white">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/careers.html" class="hover:text-white">Careers</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/sustainability.html" class="hover:text-white">Sustainability</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">Popular destinations</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="./assets/subwebpages/japan.html" class="hover:text-white">Japan</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/iceland.html" class="hover:text-white">Iceland</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/italy.html" class="hover:text-white">Italy</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/morocco.html" class="hover:text-white">Morocco</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/egypt.html" class="hover:text-white">Acient Egypt</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/mount-golgotha.html" class="hover:text-white">Golgotha</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">What</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="./assets/subwebpages/unusial-trips.html" class="hover:text-white">Unusual</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/james-bond-adventures.html" class="hover:text-white">James Bond Adventures</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/eclipse.html" class="hover:text-white">Eclipse</a>
+                    </li>
+                    <li>
+                        <a href="./assets/subwebpages/field-trip.html" class="hover:text-white">Field Trip</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- address -->
+        <section class="text-white mt-8 container mx-auto">
+            <h3 class="text-lg mb-4">Travel the World Headquarters</h3>
+            <address class="grid gap-3 text-gray-400">
+                <section>
+                    <h4 class="inline"><strong>Address:</strong></h4>
+                    <p class="inline ">22 Kensington Gardens,
+                    London, United Kingdom,
+                    W8 4QP</p>
+                </section>
+
+                <section>
+                    <h4 class="inline"><strong>Telephone:</strong></h4>
+                    <p class="inline ">+44 20 7946 0000</p>
+                </section>
+    
+                <section>
+                    <h4 class="inline"><strong>Email: </strong></h4>
+                    <p class="underline inline ">info@travelTheWorld.com</p>
+                </section>
+
+            </address>
+        </section>
+
+        <!-- copyright -->
+        <section class="text-white mt-8 flex justify-evenly">
+            <h3 class="block w-full">&copy Travel The World 2024</h3>
+            <ul class="flex justify-end gap-2 w-full">
+                <li><a href=""><img src="./assets/icons/icons8-facebook.svg" alt="facebook" aria-label="follow us on facebook"></a></li>
+                <li><a href=""><img src="./assets/icons/icons8-instagram.svg" alt="instagram" aria-label="follow us on instagram"></a></li>
+                <li><a href=""><img src="./assets/icons/icons8-twitterx (1).svg" alt="x" aria-label="follow us on x"></a></li>
+                <li><a href=""><img src="./assets/icons/icons8-youtube.svg" alt="youtube" aria-label="subscribe to us on youtube"></a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./app.js" defer></script>
+</body>

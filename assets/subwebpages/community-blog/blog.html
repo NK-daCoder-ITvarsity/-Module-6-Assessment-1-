@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel The World | Blog</title>
+    <!-- output is our generated tailwind css -->
+    <link rel="stylesheet" href="../../../output.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../../../assets/effect-utils/custom-effect.css"/>
+    <script type="module" src="../../scripts/chatbot-business-logic.js" defer></script>
+</head>
+<body class="bg-white sm:bg-gray-200 unique-grid-asid-nav-1-main-aside-nav-2">
+
+    <!-- desktop -->
+    <header class="hidden sm:block order-1 p-2 fixed top-1 left-1 h-full">
+        <!-- desktop -->
+        <nav class="bg-white h-full flex flex-col justify-between items-center p-3 rounded-3xl">
+            <section class="flex flex-col justify-center items-center">
+                <img src="" alt="" class="rounded-full border h-9 w-9 bg-red">
+                <h1 class="font-semibold">User-Name</h1>
+                <p class="text-xs text-gray-400">@user1456</p>
+            </section>
+
+            <ul class="flex flex-col gap-3 justify-between">
+                <li>
+                    <button type="button" data-page="page-1" class="border nav-button-desktop flex justify-center items-center font-semibold w-full p-2 rounded-full gap-2 text-xs is-in-active-state-desktop">
+                        <span class="material-symbols-rounded">
+                            news
+                        </span>
+                        News
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-page="page-2" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            camera_video
+                        </span>
+                        Vlogs
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-page="page-3" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            web_stories
+                        </span>
+                        Blogs
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-page="page-4" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            subscriptions
+                        </span>
+                        Following
+                    </button>
+                </li>
+                <li>
+                    <button type="button" data-page="page-5" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            favorite
+                        </span>
+                        Favourites
+                    </button>
+                </li>
+                <li class="profile-btns hidden">
+                    <button type="button" data-page="page-6" class="personal-channel-btn nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            person
+                        </span>
+                        My Profile
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="flex flex-col gap-1">
+                <li>
+                    <button data-page="page-7" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            settings
+                        </span>
+                        Settings
+                    </button>
+                </li>
+                <li>
+                    <button data-page="page-8" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            robot_2
+                        </span>
+                        ChatBot
+                    </button>
+                </li>
+                <li>
+                    <a href="../../../index.html" class="nav-button-desktop flex justify-center items-center font-semibold border w-full p-2 rounded-full gap-2 text-xs">
+                        <span class="material-symbols-rounded">
+                            logout
+                        </span>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile -->
+    <header class="sm:hidden z-50">
+        <!-- mobile -->
+        <!-- top nav -->
+        <nav class="sm:hidden bg-white fixed top-0 left-0 w-full flex justify-between items-center p-3 z-50 border">
+            <section><img src="" alt="" class="border rounded-full h-7 w-7"></section>
+            <button class="flex justify-center items-center border rounded-md p-1" id="burger-menu">
+                <span class="material-symbols-rounded">
+                    menu
+                </span>
+            </button>
+            
+            <button class="justify-center items-center hidden border rounded-md p-1" id="cancle-menu-button">
+                <span class="material-symbols-rounded">
+                    close
+                </span>
+            </button>
+
+            <ul class="nav-ul-mobile nav-transition-right border -right-96 fixed flex flex-col gap-3 mobile-nav-ul h-screen w-1/2 bg-white p-3 pt-8" id="mobile-nav-items">
+                <li class="border-b pb-2 ">
+                    <button  data-page="page-1" class="mobile-nav-button flex items-center justify-center gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            news
+                        </span>
+                        News
+                    </button>
+                </li>
+                
+                <li class="border-b pb-2 ">
+                    <button data-page="page-8" class="mobile-nav-button flex items-center justify-center gap-1 text-xs" id="chatbot-btn">
+                        <span class="material-symbols-rounded">
+                            robot_2
+                        </span>
+                        ChatBot
+                    </button>
+                </li>
+                
+                <li class="border-b pb-2 ">
+                    <button  data-page="page-7" class="mobile-nav-button flex items-center justify-center gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            settings
+                        </span>
+                        Settings
+                    </button>
+                </li>
+                
+                <li class="border-b pb-2 ">
+                    <a href="../../../index.html" class="flex items-center justify-start gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            logout
+                        </span>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- bottom nav -->
+        <!-- hidden when in chatbot mode and "flex" in article mode -->
+        <nav class="flex sm:hidden bg-white fixed bottom-0 left-0  flex-col justify-center items-center social-media-nav--width rounded-tl-2xl rounded-tr-2xl" id="bottom-menu">
+            <ul class="flex justify-evenly items-center w-full">
+
+                <li class="w-full">
+                    <button type="button" data-page="page-2" class="mobile-nav-button flex flex-col justify-center items-center font-semibold w-full p-2 gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            camera_video
+                        </span>
+                        Vlogs
+                    </button>
+                </li>
+                <li class="w-full">
+                    <button type="button" data-page="page-3" class="mobile-nav-button flex flex-col justify-center items-center font-semibold w-full p-2 gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            web_stories
+                        </span>
+                        Blogs
+                    </button>
+                </li>
+                
+                <li class="w-full">
+                    <button type="button" data-page="page-4" class="mobile-nav-button flex flex-col justify-center items-center font-semibold w-full p-2 gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            subscriptions
+                        </span>
+                        Following
+                    </button>
+                </li>
+
+                <li class="w-full">
+                    <button type="button" data-page="page-5" class="mobile-nav-button flex flex-col justify-center items-center font-semibold w-full p-2 gap-1 text-xs">
+                        <span class="material-symbols-rounded">
+                            favorite
+                        </span>
+                        Favourites
+                    </button>
+                </li>
+
+                <li class="profile-btns w-full hidden">
+                    <button type="button" data-page="page-6" class="personal-channel-btn mobile-nav-button flex-col w-full font-semibold justify-center items-center gap-1 text-xs p-2">
+                        <span class="material-symbols-rounded">
+                            person
+                        </span>
+                        Channel
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class=" sm:p-2 h-auto border-2 sm:order-2  sm:bg-transparent mt-14 sm:mt-0 sm:container sm:mx-auto desktop-length">
+        <!-- News -->
+        <section class="sections-js p-2 sm:p-3 w-full h-32 sm:bg-white rounded-3xl sm:overflow-y-auto sm:h-full" id="page-1">
+            <section class="rounded-2xl p-2 news-background-wallpaper sm:h-96 text-white flex justify-end items-end" aria-label="hero section">
+                <h1 class="text-3xl text-right">Trends, <br>Reporting, <br>Discoveries</h1>
+            </section>
+
+            <section class="">
+                <h2 class="py-3 font-semibold">Discoveries</h2>
+            </section>
+            <section class="grid grid-cols-1 sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-16">
+                <!-- Article 1 -->
+                <article class="border p-3 rounded-3xl bg-white transition duration-300 ease-in-out hover:shadow-lg w-full sm:w-auto">
+                    <section class="w-full h-full">
+                        <div class="h-36 w-full">
+                            <img src="../../social-media-assets/news/destinations.jpg" alt="Travel Trends" class="h-full w-full rounded-3xl object-cover">
+                        </div>
+                        <article>
+                            <h3 class="font-bold text-lg sm:text-xl lg:text-2xl leading-snug">Explore the Latest Travel Trends: 5 Destinations Dominating 2024</h3>
+                            <p class="mt-1 text-sm">
+                                Discover the hidden gems that are quickly becoming must-visit spots. From remote islands to vibrant cities, here’s where you should plan your next escape.
+                            </p>
+                            <button class="border-blue-900 text-shadow-medium p-2 mt-4 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white hover:from-blue-500 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 active:scale-95">
+                                Learn More
+                            </button>
+                        </article>
+                    </section>
+                </article>
+            
+                <!-- Article 2 -->
+                <article class="border p-3 rounded-3xl bg-white transition duration-300 ease-in-out hover:shadow-lg w-full sm:w-auto">
+                    <section class="w-full h-full">
+                        <div class="h-36 w-full">
+                            <img src="../../social-media-assets/news/hidden-cultures.jpg" alt="Hidden Cultures" class="h-full w-full rounded-3xl object-cover">
+                        </div>
+                        <article>
+                            <h3 class="font-bold text-lg sm:text-xl lg:text-2xl leading-snug">Unlocking Secret Cultures: 7 Undiscovered Regions</h3>
+                            <p class="mt-1 text-sm">
+                                Dive into hidden traditions and ancient rituals only a few travelers have witnessed. Discover the stories locals rarely share with outsiders.
+                            </p>
+                            <button class="border-blue-900 text-shadow-medium p-2 mt-4 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white hover:from-blue-500 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 active:scale-95">
+                                Learn More
+                            </button>
+                        </article>
+                    </section>
+                </article>
+            
+                <!-- Article 3 -->
+                <article class="border p-3 rounded-3xl bg-white transition duration-300 ease-in-out hover:shadow-lg w-full sm:w-auto">
+                    <section class="w-full h-full">
+                        <div class="h-36 w-full">
+                            <img src="../../social-media-assets/news/hauntings.jpg" alt="Haunted Places" class="h-full w-full rounded-3xl object-cover">
+                        </div>
+                        <article>
+                            <h3 class="font-bold text-lg sm:text-xl lg:text-2xl leading-snug">Mysterious and Haunted: 5 Chilling Destinations for the Brave</h3>
+                            <p class="mt-1 text-sm">
+                                Experience the thrill of exploring the world’s most eerie places. Dare to enter these spine-chilling sites where legends come to life.
+                            </p>
+                            <button class="border-blue-900 text-shadow-medium p-2 mt-4 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white hover:from-blue-500 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 active:scale-95">
+                                Learn More
+                            </button>
+                        </article>
+                    </section>
+                </article>
+            
+                <!-- Article 4 -->
+                <article class="border p-3 rounded-3xl bg-white transition duration-300 ease-in-out hover:shadow-lg w-full sm:w-auto">
+                    <section class="w-full h-full">
+                        <div class="h-36 w-full">
+                            <img src="../../social-media-assets/news/banned-island.png" alt="Island Mysteries" class="h-full w-full rounded-3xl object-cover">
+                        </div>
+                        <article>
+                            <h3 class="font-bold text-lg sm:text-xl lg:text-2xl leading-snug">Lost in Time: The Most Enigmatic Islands You Need to Visit</h3>
+                            <p class="mt-1 text-sm">
+                                Step onto islands steeped in mystery, where forgotten traditions and curious landscapes leave more questions than answers.
+                            </p>
+                            <button class="border-blue-900 text-shadow-medium p-2 mt-4 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white hover:from-blue-500 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 active:scale-95">
+                                Learn More
+                            </button>
+                        </article>
+                    </section>
+                </article>
+            
+                <!-- Article 5 -->
+                <article class="border p-3 rounded-3xl bg-white transition duration-300 ease-in-out hover:shadow-lg w-full sm:w-auto">
+                    <section class="w-full h-full">
+                        <div class="h-36 w-full">
+                            <img src="../../social-media-assets/news/golgotha-card.jpg" alt="Extreme Adventures" class="h-full w-full rounded-3xl object-cover">
+                        </div>
+                        <article>
+                            <h3 class="font-bold text-lg sm:text-xl lg:text-2xl leading-snug">Beyond the Edge: 5 Adventures for the Fearless Traveler</h3>
+                            <p class="mt-1 text-sm">
+                                Not for the faint-hearted! Explore journeys filled with daring feats and push the limits of your comfort zone in unforgettable settings.
+                            </p>
+                            <button class="border-blue-900 text-shadow-medium p-2 mt-4 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white hover:from-blue-500 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 active:scale-95">
+                                Learn More
+                            </button>
+                        </article>
+                    </section>
+                </article>
+            
+                <!-- Article 6 -->
+                <article class="border p-3 rounded-3xl bg-white transition duration-300 ease-in-out hover:shadow-lg w-full sm:w-auto">
+                    <section class="w-full h-full">
+                        <div class="h-36 w-full">
+                            <img src="../../social-media-assets/news/fearless-adventures.jpg" alt="Underwater Worlds" class="h-full w-full rounded-3xl object-cover">
+                        </div>
+                        <article>
+                            <h3 class="font-bold text-lg sm:text-xl lg:text-2xl leading-snug">Uncover the Secrets Beneath: Dive into Hidden Underwater Worlds</h3>
+                            <p class="mt-1 text-sm">
+                                Plunge into unexplored depths where relics of the past and surreal marine life create a realm of mystery beneath the waves.
+                            </p>
+                            <button class="border-blue-900 text-shadow-medium p-2 mt-4 rounded-2xl bg-gradient-to-tr from-blue-700 to-blue-500 text-white hover:from-blue-500 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 active:scale-95">
+                                Learn More
+                            </button>
+                        </article>
+                    </section>
+                </article>
+            </section>
+            
+        </section>
+
+        <!-- Vlogs -->
+        <section class="hidden sections-js  bg-white sm:bg-transparent " id="page-2">
+            <section class="relative rounded-3xl sm:flex sm:flex-col z-30 grid">
+                <ul class="flex gap-3 fixed top-12 sm:top-0 left-0 sm:relative border sm:rounded-2xl bg-white pt-4 pb-2 pl-2 overflow-x-auto profile-bar">
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/balanda.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/close-up-couple-traveling_23-2151031012.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/profile-4.webp" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/Shannon-lee.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/profiles-3.jpeg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/profiles-2.jpeg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/kara-nate.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/lerator-m.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/parker-green.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                </ul>
+            </section>
+            <section class="relative rounded-3xl grid border mt-24 sm:my-3 bg-white p-3 z-0 overflow-x-auto">
+                <ul class="flex gap-2 h-auto">
+                    <li><button class="p-2 rounded-2xl border font-semibold transition-all transform hover:scale-125 hover:m-4">Latest</button></li>
+                    <li><button class="p-2 rounded-2xl border font-semibold transition-all transform hover:scale-125 hover:m-4">Trending</button></li>
+                    <li><button class="p-2 rounded-2xl border font-semibold transition-all transform hover:scale-125 hover:m-4">Shorts</button></li>
+                </ul>
+            </section>
+            <section class="w-full sm:h-auto pb-16 sm:p-5 sm:w-full bg-white sm:mt-2 rounded-3xl sm:overflow-y-auto">
+                <h2 class="sm:text-xl mb-1 mt-1">Latest Videos</h2>
+                <ul class="rounded-3xl grid grid-cols-1 lg:grid-cols-2 p-2 gap-3 ">
+                    
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <section class="h-auto p-1 flex items-center gap-3">
+                            <img src="../../social-media-assets/user-profiles/kara-nate.jpg" alt="Kara and Nate" class="w-8 h-8 rounded-full">
+                            <h3>Kara And Nate</h3>
+                        </section>
+                        <iframe class="w-full video-height object-cover rounded-3xl" src="https://www.youtube.com/embed/l2t6ful9mmw?si=LfxLjIwDHH54OmXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="mt-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas aliquam et sint molestias officiis natus sit ea corrupti cupiditate nemo, ex, voluptas, dolorem distinctio provident expedita. Et, dignissimos. Saepe.
+                        </p>
+                        <section class="flex justify-between mt-3 border-t pt-2">
+                            <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Follow Me</button>
+                            <ul class="flex gap-3">
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            thumb_up
+                                        </span>
+                                        <span>23</span>K
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            favorite
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+    
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <section class="h-auto p-1 flex items-center gap-3">
+                            <img src="../../social-media-assets/user-profiles/parker-green.jpg" alt="Kara and Nate" class="w-8 h-8 rounded-full">
+                            <h3>Parker Green</h3>
+                        </section>
+                        <iframe class="w-full video-height object-cover rounded-3xl" src="https://www.youtube.com/embed/OQr9x638dcw?si=tb20RlCGFRuGcnZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="mt-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas aliquam et sint molestias officiis natus sit ea corrupti cupiditate nemo, ex, voluptas, dolorem distinctio provident expedita. Et, dignissimos. Saepe.
+                        </p>
+                        <section class="flex justify-between mt-3 border-t pt-2">
+                            <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Follow Me</button>
+                            <ul class="flex gap-3">
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            thumb_up
+                                        </span>
+                                        <span>5</span>K
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            favorite
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                    </li>
+                    
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <section class="h-auto p-1 flex items-center gap-3">
+                            <img src="../../social-media-assets/user-profiles/lerator-m.jpg" alt="Lerato M" class="w-8 h-8 rounded-full">
+                            <h3>Lerato M</h3>
+                        </section>
+                        <iframe class="w-full video-height object-cover rounded-3xl" src="https://www.youtube.com/embed/W_senG3v38Y?si=rKI7CqWlPEH2LhJu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="mt-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas aliquam et sint molestias officiis natus sit ea corrupti cupiditate nemo, ex, voluptas, dolorem distinctio provident expedita. Et, dignissimos. Saepe.
+                        </p>
+                        <section class="flex justify-between mt-3 border-t pt-2">
+                            <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Follow Me</button>
+                            <ul class="flex gap-3">
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            thumb_up
+                                        </span>
+                                        <span>15</span>K
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            favorite
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+    
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <section class="h-auto p-1 flex items-center gap-3">
+                            <img src="../../social-media-assets/user-profiles/kara-nate.jpg" alt="Kara and Nate" class="w-8 h-8 rounded-full">
+                            <h3>Kara And Nate</h3>
+                        </section>
+                        <iframe class="w-full video-height object-cover rounded-3xl" src="https://www.youtube.com/embed/u5zQWXccaNw?si=jGzeQ2Z96Y2Yfsjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="mt-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas aliquam et sint molestias officiis natus sit ea corrupti cupiditate nemo, ex, voluptas, dolorem distinctio provident expedita. Et, dignissimos. Saepe.
+                        </p>
+                        <section class="flex justify-between mt-3 border-t pt-2">
+                            <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Follow Me</button>
+                            <ul class="flex gap-3">
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            thumb_up
+                                        </span>
+                                        <span>30</span>K
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex gap-2">
+                                        <span class="material-symbols-rounded">
+                                            favorite
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        
+        <!-- Blogs -->
+        <section class="hidden sections-js  bg-white sm:bg-transparent " id="page-3">
+            <!-- Profiles -->
+            <section class="relative rounded-3xl sm:flex sm:flex-col z-30 grid">
+                <ul class="flex gap-3 fixed top-12 sm:top-0 left-0 sm:relative border sm:rounded-2xl bg-white pt-4 pb-2 pl-2 overflow-x-auto profile-bar">
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/balanda.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/close-up-couple-traveling_23-2151031012.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/profile-4.webp" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/Shannon-lee.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/profiles-3.jpeg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/profiles-2.jpeg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/kara-nate.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/lerator-m.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/parker-green.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/Matt-black-jacket.webp" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                    <li class="flex-none"><button class="h-16 w-16 sm:h-24 sm:w-24 rounded-full transform transition-all hover:scale-125 hover:p-3"><img src="../../social-media-assets/user-profiles/jetset-christina.jpg" alt="" class="w-full h-full rounded-full object-cover"></button></li>
+                </ul>
+            </section>
+
+            <!-- TODO: Individual Profile Sections -->
+            <section>
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+            </section>
+
+            <!-- CTA Based on what pages hold -->
+            <section class="mx-1 relative rounded-3xl grid border mt-24 sm:my-3 bg-white p-3 z-0">
+                <ul class="flex gap-2 h-auto overflow-x-auto">
+                    <li><button class="p-2 rounded-2xl border blog-post-trend-btn font-semibold transition-all transform hover:scale-125 hover:m-4">Latest</button></li>
+                    <li><button class="p-2 rounded-2xl blog-post-trend-btn font-semibold transition-all transform hover:scale-125 hover:m-4">Trending</button></li>
+                    <li><button class="p-2 rounded-2xl blog-post-trend-btn font-semibold transition-all transform hover:scale-125 hover:m-4">Lifestyle</button></li>
+                    <li><button class="p-2 rounded-2xl blog-post-trend-btn font-semibold transition-all transform hover:scale-125 hover:m-4">Nomad</button></li>
+                    <li><button class="p-2 rounded-2xl blog-post-trend-btn font-semibold transition-all transform hover:scale-125 hover:m-4">Skills</button></li>
+                </ul>
+            </section>
+
+            <!-- Blog Posts -->
+            <!-- remove hidden once done with article sections -->
+            <section class="w-full sm:h-auto pb-16 sm:p-5 sm:w-full sm:mt-2 rounded-3xl bg-white grid sm:overflow-y-auto">
+                <ul class="rounded-3xl grid grid-cols-1 lg:grid-cols-2 p-2 gap-3">
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <article>
+                            <button class="flex gap-2 justify-center items-center mb-2 border rounded-3xl p-2 w-44">
+                                <h2 class="order-2">Mathew Patrick</h2>
+                                <img src="../../social-media-assets/user-profiles/Matt-black-jacket.webp" alt="Mathew Patrick" class="w-8 h-8 rounded-full object-cover order-1">
+                            </button>
+                            
+                            <section class="flex flex-col">
+                                <h2 class="uppercase font-semibold text-lg sm:text-2xl  order-2">Why Does Your Big Mac Taste Different by the Sea? The Mystery Behind Coastal vs. Inland Big Macs!</h2>
+                                <p class="mt-2 text-sm sm:text-base order-3">Alright, picture this: you’re road-tripping across the country, pulling up to your favorite fast-food spot after a long drive. You’re craving that iconic Big Mac, that double-decker, saucy creation that’s supposed to taste the same everywhere, right? But when you sink your teeth into one by the beach, it’s…</p>
+                                <img src="" alt="" class="order-1">
+                            </section>
+
+                            <!-- CTA -->
+                            <section class="flex justify-between mt-3 border-t pt-2">
+                                <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Read More</button>
+                                <ul class="flex gap-3">
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                thumb_up
+                                            </span>
+                                            <span>2</span>K
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                favorite
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </li>
+
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <article>
+                            <button class="flex gap-2 justify-center items-center mb-2 border rounded-3xl p-2 w-44">
+                                <h2 class="order-2">Jetset Christina</h2>
+                                <img src="../../social-media-assets/user-profiles/jetset-christina.jpg" alt="Christina a blond girl with pink bikini" class="w-8 h-8 rounded-full object-cover order-1">
+                            </button>
+                            
+                            <section class="flex flex-col">
+                                <h2 class="uppercase font-semibold text-lg  sm:text-2xl order-2">Why Cabo San Lucas Needs to Be Your Next Beach Destination (Like, Right Now!)</h2>
+                                <p class="mt-2 text-sm sm:text-base order-3">Imagine cruising along the Cabo coast at golden hour, with endless ocean views, cocktail in hand. Book a sunset cruise for the full “wow” experience as you watch the sky go from brilliant blue to pink and orange hues that make every second feel like a screensaver....</p>
+                                <img src="" alt="" class="order-1">
+                            </section>
+
+                            <!-- CTA -->
+                            <section class="flex justify-between mt-3 border-t pt-2">
+                                <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Read More</button>
+                                <ul class="flex gap-3">
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                thumb_up
+                                            </span>
+                                            <span>5</span>K
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                favorite
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </li>
+
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <article>
+                            <button class="flex gap-2 justify-center items-center mb-2 border rounded-3xl p-2 w-44">
+                                <h2 class="order-2">Gonzalez</h2>
+                                <img src="../../social-media-assets/user-profiles/Gonzalez46368-031.jpg" alt="Christina a blond girl with pink bikini" class="w-8 h-8 rounded-full object-cover order-1">
+                            </button>
+                            
+                            <section class="flex flex-col">
+                                <h2 class="uppercase font-semibold text-lg  sm:text-2xl order-2">The Hidden Secrets of Mount Golgotha: A Detective’s Discovery That Changes Everything!</h2>
+                                <p class="mt-2 text-sm sm:text-base order-3">
+                                    Alright, mystery lovers, buckle up—because we’re about to uncover something incredible. Picture ancient Jerusalem, dusty roads, crowds, and secrets so deep they've been buried for millennia. Now, we all know Mount Golgotha as the “Place of the Skull,” the spot where some of the most famous events in biblical history took place. But what if....
+                                </p>
+                                <img src="" alt="" class="order-1">
+                            </section>
+
+                            <!-- CTA -->
+                            <section class="flex justify-between mt-3 border-t pt-2">
+                                <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Read More</button>
+                                <ul class="flex gap-3">
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                thumb_up
+                                            </span>
+                                            <span>556</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                favorite
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </li>
+
+                    <li class="w-full block h-auto p-2 border rounded-3xl">
+                        <article>
+                            <button class="flex gap-2 justify-center items-center mb-2 border rounded-3xl p-2 w-44">
+                                <h2 class="order-2">Travel Couple</h2>
+                                <img src="../../social-media-assets/user-profiles/close-up-couple-traveling_23-2151031012.jpg" alt="Christina a blond girl with pink bikini" class="w-8 h-8 rounded-full object-cover order-1">
+                            </button>
+                            
+                            <section class="flex flex-col">
+                                <h2 class="uppercase font-semibold text-lg  sm:text-2xl order-2">
+                                    Why You Should Drop Everything and Visit Portugal’s Algarve Coast! (Warning: You May Never Want to Leave)
+                                </h2>
+                                <p class="mt-2 text-sm sm:text-base order-3">
+                                    Alright, travel junkies, picture this: crystal-clear waters, golden cliffs, and beaches that look like they’ve been crafted by the gods themselves. If you haven’t been to Portugal’s Algarve coast, get ready, because this place is about to become your new obsession. I mean, if there’s a paradise that exists on Earth, I’m convinced the Algarve is it. Let’s dive in and find out why you should be packing your bags right now for Portugal’s sun-kissed playground.....
+                                </p>
+                                <img src="" alt="" class="order-1">
+                            </section>
+
+                            <!-- CTA -->
+                            <section class="flex justify-between mt-3 border-t pt-2">
+                                <button class="transition transform hover:scale-95 font-semibold rounded-2xl p-2 bg-gradient-to-t from-blue-700 to-blue-400 text-white text-shadow-medium">Read More</button>
+                                <ul class="flex gap-3">
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                thumb_up
+                                            </span>
+                                            <span>6</span>K
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="transition transform hover:scale-95 border rounded-2xl p-2 flex">
+                                            <span class="material-symbols-rounded">
+                                                favorite
+                                            </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- Following -->
+        <section class="hidden sections-js bg-white sm:bg-transparent" id="page-4">
+            <!-- if there is no following then this section is shown -->
+            <section class="sm:bg-white h-screen rounded-3xl flex flex-col justify-center items-center">
+                <img src="../../illustrations/rb_129652.png" alt="" class="w-80 sm:w-1/2">
+                <h2 class="text-3xl text-center">Looks Like This Place Looks Desserted....</h2>
+            </section>
+
+            <!-- if the user follows someone then this section is shown -->
+            <section class="hidden">
+                <section class="relative rounded-3xl sm:flex sm:flex-col z-30">
+                    <!-- remove h-32 once we have a follower -->
+                    <ul class="flex gap-3 fixed top-12 sm:top-0 left-0 sm:relative border sm:rounded-2xl bg-white pt-4 pb-2 pl-2 overflow-x-auto profile-bar h-32">
+                        
+                    </ul>
+                </section>
+
+                <section class="min-h-screen bg-white rounded-2xl mt-8">
+                    
+                </section>
+            </section>
+        </section>
+
+        <!-- Favs -->
+        <section class="hidden sections-js  bg-white " id="page-5"></section>
+
+        <!-- personal channel-->
+        <section class="hidden h-screen sm:h-auto sections-js relative bg-white sm:bg-transparent p-2" id="page-6">
+            <section class="post-nav fixed bottom-20 right-4 grid items-center justify-center">
+                <button class="bg-white border rounded-full p-3 shadow-xl flex order-2 w-12 h-12 fixed bottom-20 right-4" id="add-a-post-btn">
+                    <span class="material-symbols-rounded">
+                        post_add
+                    </span>
+                </button>
+                <nav class="order-1 border mb-4 rounded-2xl bg-white relative bottom-11 p-4" id="post-menu">
+                    <ul class="flex flex-col gap-3">
+                        <li class="flex gap-2 z-10 justify-end items-center text-sm" >
+                            Make Blog
+                            <button class="flex border p-1 sm:p-2 rounded-full sm:rounded-2xl profile-settings-btns" data-page="create-blog-section">   
+                                <span class="material-symbols-rounded">
+                                    newsstand
+                                </span>
+                            </button>
+                        </li>
+                        <li class="flex gap-2 z-10 justify-end items-center text-sm">
+                            Make Video
+                            <button class="flex border p-1 sm:p-2 rounded-full sm:rounded-2xl profile-settings-btns" data-page="create-video-section">
+                                <span class="material-symbols-rounded">
+                                    play_circle
+                                </span>
+                            </button>
+                        </li>
+                        <li class="flex gap-2 z-10 justify-end items-center text-sm">
+                            Make Photos
+                            <button class="flex border p-1 sm:p-2 rounded-full sm:rounded-2xl profile-settings-btns" data-page="add-photos-section">
+                                <span class="material-symbols-rounded">
+                                    add_a_photo
+                                </span>
+                            </button>
+                        </li>
+                        <li class="flex gap-2 z-10 justify-end items-center text-sm">
+                            Make Community
+                            <button class="flex border p-1 sm:p-2 rounded-full sm:rounded-2xl profile-settings-btns" data-page="add-community-post-section">
+                                <span class="material-symbols-rounded">
+                                    forum
+                                </span>
+                            </button>
+                        </li>
+                        <li class="flex gap-2 z-10 justify-end items-center text-sm">
+                            Modify Bio
+                            <button class="flex border p-1 sm:p-2 rounded-full sm:rounded-2xl profile-settings-btns" data-page="modify-bio">
+                                <span class="material-symbols-rounded">
+                                    person
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Users Creation -->
+            <section>
+                <!-- Create Blogs Form -->
+                <!-- Blog Form Section -->
+                <section class="chatbot bg-white rounded-2xl sm:p-3 hidden create-sections overflow-y-auto pb-14" id="create-blog-section">
+                    <div class="sm:max-w-4xl mx-auto p-6 space-y-6">
+                        <!-- Blog Post Form -->
+                        <form id="blogForm" class="space-y-4">
+                            <h2 class="text-2xl font-bold">Create Your Custom Blog Post</h2>
+
+                            <div>
+                                <label for="title" class="block text-lg font-medium">Blog Title</label>
+                                <input type="text" id="title" placeholder="Enter blog title"
+                                    class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-blue-500" />
+                            </div>
+
+                            <div>
+                                <label for="author" class="block text-lg font-medium">Author Name</label>
+                                <input type="text" id="author" placeholder="Enter author name"
+                                    class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-blue-500" />
+                            </div>
+
+                            <div>
+                                <label for="content" class="block text-lg font-medium">Blog Content</label>
+                                <textarea id="content" placeholder="Write your blog content here" 
+                                    class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-blue-500"></textarea>
+                            </div>
+
+                            <div class="p-2">
+                                <label for="images" class="block text-lg font-medium">Add Images</label>
+                                <input type="file" id="images" name="images" accept="image/*" multiple 
+                                    class="mt-1 block w-full text-gray-500 border border-gray-300 rounded-md cursor-pointer focus:outline-none focus:ring focus:ring-blue-300">
+                                <!-- Image Preview Section -->
+                                <div id="imagePreviewContainer" class="flex flex-wrap mt-2 space-x-2"></div>
+                            </div>
+
+                            <button type="button" id="updatePreview" 
+                                class="bg-blue-500 text-white rounded-lg p-2 mt-4 hover:bg-blue-600 transition">
+                                Update Preview
+                            </button>
+                            <button type="button" id="postBlog" 
+                                class="bg-green-500 text-white rounded-lg p-2 mt-4 hover:bg-green-600 transition">
+                                Post Blog
+                            </button>
+                        </form>
+
+                        <!-- Preview Section -->
+                        <section id="preview" class="p-6 border border-gray-300 rounded-lg bg-gray-100">
+                            <h2 class="text-2xl font-bold mb-2" id="previewTitle">Blog Title Preview</h2>
+                            <p class="text-lg text-gray-600 mb-2" id="previewAuthor">Author: Preview Author</p>
+                            <div class="text-gray-700" id="previewContent">Blog content preview will appear here...</div>
+                            <div id="previewImages" class="flex flex-wrap mt-2 space-x-2"></div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- Create Community post -->
+                <section class="chatbot bg-white rounded-2xl sm:p-3 hidden create-sections overflow-y-auto pb-14" id="add-community-post-section">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-full space-y-6">
+                        <h2 class="text-2xl font-semibold text-gray-800 text-center">Create a Community Post</h2>
+                        
+                        <form id="postForm" class="space-y-4">
+                          <!-- Post Title -->
+                          <div>
+                            <label for="postTitle" class="text-gray-600 font-medium">Post Title</label>
+                            <input type="text" id="postTitle" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Post Title">
+                          </div>
+                          
+                          <!-- Description -->
+                          <div>
+                            <label for="postDescription" class="text-gray-600 font-medium">Description</label>
+                            <textarea id="postDescription" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="What's on your mind?"></textarea>
+                          </div>
+                    
+                          <!-- Image Upload -->
+                          <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center" id="imageUploadArea">
+                            <input type="file" id="imageUpload" class="hidden" accept="image/*" onchange="previewCommunityImage(event)">
+                            <label for="imageUpload" class="text-blue-500 cursor-pointer hover:underline">Upload an Image</label>
+                            <p class="text-gray-400 mt-2">Optional - JPG, PNG formats</p>
+                          </div>
+                          <div id="imagePreview" class="mt-4 hidden">
+                            <img id="previewImage" class="w-full rounded-md" alt="Post image preview">
+                            <button type="button" class="text-red-500 hover:underline mt-2">Remove image</button>
+                          </div>
+                          
+                          <!-- Tags -->
+                          <div id="tagsContainer" class="space-y-2">
+                            <label class="text-gray-600 font-medium">Tags (Optional)</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" placeholder="e.g., Travel, Adventure">
+                          </div>
+                          <button type="button" class="text-blue-500 hover:underline mt-2">+ Add another tag</button>
+                    
+                          <!-- Submit Button -->
+                          <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition">Post</button>
+                        </form>
+                      </div>
+                </section>
+
+                <!-- Bio Modification -->
+                <section class="chatbot bg-white rounded-2xl sm:p-3 hidden create-sections overflow-y-auto pb-14" id="modify-bio">
+                    <div class="bg-white p-8 rounded-lg shadow-lg w-full space-y-6">
+                        <h2 class="text-2xl font-semibold text-gray-800 text-center">Create Your Channel Profile</h2>
+                        
+                        <form id="profileForm" class="space-y-4">
+                          <!-- Channel Name -->
+                          <div>
+                            <label for="chanel-name-input" class="text-gray-600 font-medium">Channel Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Channel Name" id="chanel-name-input">
+                          </div>
+                          
+                          <!-- Banner Upload -->
+                          <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center" id="bannerUploadArea">
+                            <input type="file" id="bannerUpload" class="hidden" accept="image/*">
+                            <label for="bannerUpload" class="text-blue-500 cursor-pointer hover:underline">Upload Channel Banner</label>
+                            <p class="text-gray-400 mt-2">Recommended size: 1200 x 400px</p>
+                          </div>
+                          <div id="bannerPreview" class="mt-4 hidden">
+                            <img id="previewBannerImage" class="w-full rounded-md" alt="Banner preview">
+                            <button type="button" class="text-red-500 hover:underline mt-2">Remove banner</button>
+                          </div>
+                    
+                          <!-- Profile Image Upload -->
+                          <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center" id="profileImageUploadArea">
+                            <input type="file" id="profileImageUpload" class="hidden" accept="image/*">
+                            <label for="profileImageUpload" class="text-blue-500 cursor-pointer hover:underline">Upload Profile Image</label>
+                            <p class="text-gray-400 mt-2">Recommended size: 400 x 400px</p>
+                          </div>
+                          <div id="profileImagePreview" class="mt-4 hidden">
+                            <img id="previewProfileImage" class="w-24 h-24 rounded-full mx-auto" alt="Profile preview">
+                            <button type="button" class="text-red-500 hover:underline mt-2">Remove profile image</button>
+                          </div>
+                    
+                          <!-- Description -->
+                          <div>
+                            <label for="description" class="text-gray-600 font-medium">Channel Description</label>
+                            <textarea id="description" rows="3" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Describe what your channel is about..."></textarea>
+                          </div>
+                    
+                          <!-- Location -->
+                          <div>
+                            <label for="location" class="text-gray-600 font-medium">Location</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Where are you based?" id="location-input">
+                          </div>
+                          
+                          <!-- Social Media Links -->
+                          <div id="socialLinksContainer" class="space-y-2">
+                            <label class="text-gray-600 font-medium">Social Media Links (Optional)</label>
+                            <input type="url" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2" placeholder="https://your-social-link.com">
+                          </div>
+                          <button type="button" class="text-blue-500 hover:underline mt-2" id="addSocialLinksBtn">+ Add another social link</button>
+                    
+                          <!-- Submit Button -->
+                          <button type="button" class="w-full bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition" id="submit-profile-changes">Create Profile</button>
+                        </form>
+                      </div>
+                </section>
+
+                <!-- Create Photo Posts -->
+                <section class="chatbot bg-white rounded-2xl sm:p-3 hidden create-sections overflow-y-auto pb-14" id="add-photos-section">
+                     <!-- Photo Upload Form -->
+                    <div class="bg-white p-8 rounded-lg lg w-full space-y-6">
+                        <h2 class="text-2xl font-semibold text-gray-800 text-center">Upload Your Travel Photo</h2>
+                        
+                        <form id="uploadForm" class="space-y-4">
+                        
+                            <!-- Photo Title -->
+                            <div>
+                                <label for="title" class="text-gray-600 font-medium">Photo Title</label>
+                                <input type="text" id="title" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Sunset Over Santorini">
+                            </div>
+                            
+                            <!-- Photo Upload Area -->
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center" id="uploadArea">
+                                <input type="file" id="photoUpload" class="hidden" accept="image/*" onchange="previewPhoto(event)">
+                                <label for="photoUpload" class="text-blue-500 cursor-pointer hover:underline">Drag & drop or click to upload photo</label>
+                                <p class="text-gray-400 mt-2">JPG, PNG formats accepted</p>
+                            </div>
+                            
+                            <!-- Photo Preview -->
+                            <div id="photoPreview" class="mt-4 hidden">
+                                <img id="previewImage" class="w-full rounded-md mt-2" alt="Uploaded photo preview">
+                                <button type="button" class="text-red-500 hover:underline mt-2">Remove photo</button>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- create Short -->
+                <section class="chatbot bg-white rounded-2xl sm:p-3 hidden create-sections overflow-y-auto pb-14" id="create-video-short-section">
+
+                </section>
+
+                <!-- create Video -->
+                <section class="chatbot bg-white rounded-2xl sm:p-3 hidden create-sections overflow-y-auto pb-14" id="create-video-section">
+                     <!-- Video Upload Form -->
+                    <div class="bg-white p-8 rounded-lg h-full w-full space-y-6 grid items-center">
+                        <h2 class="text-2xl font-semibold text-gray-800 text-center">Upload Your Travel Video</h2>
+                        
+                        <form id="uploadForm" class="space-y-4">
+                            <!-- Video Title -->
+                            <div>
+                                <label for="title" class="text-gray-600 font-medium">Video Title</label>
+                                <input type="text" id="title" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Amazing Adventure in Paris">
+                            </div>
+
+                             <!-- Video SUBTEXT -->
+                             <div>
+                                <label for="title" class="text-gray-600 font-medium">Video Description</label>
+                                <input type="text" id="title" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Amazing Adventure in Paris">
+                            </div>
+                            
+                            <!-- Video Upload Area -->
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center" id="uploadArea">
+                                <input type="file" id="videoUpload" class="hidden" accept="video/*" onchange="previewVideo(event)">
+                                <label for="videoUpload" class="text-blue-500 cursor-pointer hover:underline">Drag & drop or click to upload video</label>
+                                <p class="text-gray-400 mt-2">MP4, AVI, MOV formats accepted</p>
+                            </div>
+                            
+                            <!-- Video Preview -->
+                            <div id="videoPreview" class="mt-4 hidden">
+                                <video controls class="w-full rounded-md mt-2">
+                                <source id="videoSource" src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>
+                                <button type="submit" onclick="removePreview()" class="text-red-500 hover:underline mt-2">Remove video</button>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="button" class="w-full bg-blue-500 text-white py-2 rounded-md font-medium hover:bg-blue-600 transition" id="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </section>
+
+            <!-- main dashboard -->
+            <section class="chatbot sm:bg-white rounded-2xl sm:p-3 relative sm:overflow-y-auto" id="personal-profile">
+                <!-- Banner -->
+                <img src="" alt="" class="w-full border object-fit h-56 sm:h-96  rounded-3xl" id="profile-banner-image">
+
+                <!-- Profile Image About area -->
+                <div class="w-28 h-28 sm:w-44 sm:h-44 p-1 border bg-white rounded-full absolute sm-top sm-left">
+                    <img src="" alt="" class="w-full h-full rounded-full object-cover" id="profile-image">
+                </div>
+                
+                <!-- about and followers-->
+                <section class="flex flex-col gap-2 justify-center pt-16 font-semibold">
+                    <h1 class="text-center text-2xl" id="channel-header">Channel Name</h1>
+                    <ul class="flex gap-9 justify-center">
+                        <li>
+                            <p class="flex gap-2">
+                                Followers: <span>0</span>
+                            </p>
+                        </li>
+                        <li>
+                            <button class="flex gap-2 font-semibold">
+                                Following: <span>0</span>
+                            </button>
+                        </li>
+                        <li>
+                            <p class="flex gap-2">
+                                likes
+                                <span>0</span>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!-- catagories -->
+                <section class="mt-8 w-auto grid">
+                    <ul class="flex justify-between gap-3 sm:justify-center sm:gap-5 items-center pb-2 sm:p-0 sm:mb-3 overflow-x-auto text-sm">
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 active-status-post flex-none" data-page="latest-section">Latest</button>
+                        </li>
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 flex-none" data-page="photos-section">Photos</button>
+                        </li>
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 flex-none" data-page="videos-section">Videos</button>
+                        </li>
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 flex-none" data-page="shorts-section">Shorts</button>
+                        </li>
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 flex-none" data-page="blogs-section">Blogs</button>
+                        </li>
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 flex-none" data-page="community-section">Community</button>
+                        </li>
+                        <li>
+                            <button class="post-btns p-2 sm:p-3 flex-none" data-page="about-section">About</button>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Post per button -->
+                <!-- Latest -->
+                <section class="rounded-3xl post-sections sm:h-auto pb-12 " id="latest-section">
+                    <ul id="latest-posts"></ul>                    
+                </section>
+
+                <!-- Photos -->
+                <!-- photos on page -->
+                <section class="mb-10 hidden rounded-3xl sm:h-auto  pb-12 post-sections grid-cols-1 lg:grid-cols-2" id="photos-section">
+                    <ul id="personal-photos"></ul>
+                </section>
+
+                <!-- Videos -->
+                <section class="hidden rounded-3xl post-sections  pb-12 grid-cols-1 lg:grid-cols-4" id="videos-section">
+                    <ul id="personal-videos"></ul>
+                </section>
+
+                <!-- Shorts -->
+                <section class="hidden rounded-3xl post-sections  pb-12 sm:h-auto grid-cols-1 lg:grid-cols-4" id="shorts-section">
+                    <ul id="personal-shorts"></ul>
+                </section>
+
+                <!-- Blogs -->
+                <!-- Blog Display Section -->
+                <section class="hidden rounded-3xl post-sections pb-12 sm:h-auto overflow-y-auto grid-cols-1" id="blogs-section">
+                    <ul id="personal-blogs"></ul>
+                </section>
+
+                <!-- Community -->
+                <section class="hidden rounded-3xl post-sections sm:h-auto grid-cols-1" id="community-section">
+                    <ul id="personal-community"></ul>
+                </section>
+
+                <!-- About -->
+                <section class="hidden rounded-3xl post-sections p-4" id="about-section">
+                    <!-- Description-->
+                    <h2 class="pb-2">Bio</h2>
+                    <p id="dashDiscription" class="w-1/2"></p>
+                    <!-- all social media links-->
+                    <h2 class="pb-2">Links</h2>
+                    <ul id="dashSocialProof"></ul> 
+                    <!-- Where you are currently -->
+                    <h2 class="pb-2">Location</h2>
+                    <p class="flex gap-2 w-full">
+                        <span class="material-symbols-rounded">
+                            public
+                        </span>
+                        <span id="location"></span>
+                    </p>               
+                </section>
+            </section>
+        </section>
+
+        <!-- Settings -->
+        <section class="hidden relative sections-js mb-10 sm:mb-0 rounded-3xl bg-white " id="page-7">
+            <section class="chatbot bg-white rounded-2xl p-3 sm:overflow-y-auto">
+                <h2 class="border-b  font-semibold">Settings</h2>
+                <!-- Account -->
+                <section class="mt-5 border p-2 rounded-2xl">
+                    <h3 class="font-semibold">Account</h3>
+                    <ul class="p-2 flex flex-col gap-2">
+                        <li>
+                            <button class="settings-button settings-btns p-2 w-full flex gap-1 rounded-lg z-10" data-page="general-settings">
+                                <span class="material-symbols-rounded">
+                                    settings
+                                </span>
+                                General
+                                <span class="plus">+</span>
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="general-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me when its bed time</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Appearance</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">Choose light or dark</p>
+                                    </section>
+                                    <button class="border flex justify-center items-center" id="light-mode-btn">
+                                        <span class="material-symbols-rounded">
+                                            light_mode
+                                        </span>
+                                    </button>
+                                    <!-- needs to be flex when hidden is off-->
+                                    <button class="border justify-center items-center hidden" id="dark-mode-btn">
+                                        <span class="material-symbols-rounded">
+                                            mode_night
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">App Language</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">English</p>
+                                    </section>
+                                    
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Playback in feeds</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">Choose whether videos play as you browse</p>
+                                    </section>
+                                    
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Restriction Mode</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">hide potential potential mature videos.</p>
+                                    </section>
+                                    
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Enable stats for nerds</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Earn Badges</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">Recieve Badges across all Traveling apps</p>
+                                    </section>
+                                    
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                <li class="flex justify-between px-4 sm:px-8 pb-4">
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Unlock Channel</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">Recieve Badges across all Traveling apps</p>
+                                    </section>
+                                    
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox" id="unlock-channel-btn">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="account-settings">
+                                <span class="material-symbols-rounded">
+                                    manage_accounts
+                                </span>
+                                Switch Account
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="account-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="notification-settings">
+                                <span class="material-symbols-rounded">
+                                    notifications
+                                </span>
+                                Notifications
+                                <span>+</span>
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="notification-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="purchase-memberships-settings">
+                                <span class="material-symbols-rounded">
+                                    sell
+                                </span>
+                                Purchases and Memberships
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="purchase-memberships-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="payments-settings">
+                                <span class="material-symbols-rounded">
+                                    payments
+                                </span>
+                                Billing and Payments
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="payments-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="history-settings">
+                                <span class="material-symbols-rounded">
+                                    history
+                                </span>
+                                History
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="history-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="app-data-settings">
+                                <span class="material-symbols-rounded">
+                                    monitoring
+                                </span>
+                                Your In App Data
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="app-data-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="privacy-settings">
+                                <span class="material-symbols-rounded">
+                                    lock
+                                </span>
+                                Privacy
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden"  id="privacy-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="connected-apps-settings">
+                                <span class="material-symbols-rounded">
+                                    lan
+                                </span>
+                                Connected Apps
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="connected-apps-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="experimentation-settings">
+                                <span class="material-symbols-rounded">
+                                    experiment
+                                </span>
+                                Experimentation Mode
+                            </button>
+                            <ul class="settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="experimentation-settings">
+                                <li class="flex justify-between px-4 sm:px-8 pt-4" >
+                                    <section>
+                                        <h4 class="text-sm sm:text-base">Remind me to take breaks</h4>
+                                        <p class="text-gray-400 text-xs sm:text-sm">off</p>
+                                    </section>
+                                    <!-- Switch -->
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Video and Audio Preferences -->
+                <section class="mt-5 border p-2 rounded-2xl">
+                    <h3 class="font-semibold">Video & Audio</h3>
+                    <ul class="p-2 flex flex-col gap-2">
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    movie
+                                </span>
+                                Video Quality
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    fast_rewind
+                                </span>
+                                Playback
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    data_saver_on
+                                </span>
+                                Data Saving
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    download
+                                </span>
+                                Downloads
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    live_tv
+                                </span>
+                                Live Chat
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    accessible
+                                </span>
+                                Accessibility
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    cast
+                                </span>
+                                Watch On TV
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Help And Policy -->
+                <section class="mt-5 border p-2 rounded-2xl">
+                    <h3 class="font-semibold">Help And Policy</h3>
+                    <ul class="p-2 flex flex-col gap-2">
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    help
+                                </span>
+                                Help
+                            </button>
+                        </li>
+                        <li>
+                            <button class="settings-btns p-2 w-full flex gap-1 rounded-lg" data-page="purchase-memberships-settings">
+                                <span class="material-symbols-rounded">
+                                    contract
+                                </span>
+                                Terms And Service
+                            </button>
+                            <article class="p-2 settings-menu rounded-lg border gap-4 overflow-y-auto h-auto hidden" id="purchase-memberships-settings">
+                                <!-- Section 1: Introduction -->
+                                <section class="p-4">
+                                    <h2 class="text-2xl font-semibold mb-2">Travel the World - Terms and Conditions</h2>
+                                    <p class="text-gray-600">Last Updated: <span class="font-medium">[Insert Date]</span></p>
+                                    <p class="mt-2">Welcome to Travel the World! These Terms and Conditions outline your rights and obligations when using our website, booking services, and engaging with our content. By accessing our platform or using our services, you agree to comply with these terms.</p>
+                                </section>
+                            
+                                <!-- Section 2: Booking and Reservation -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">1. Booking and Reservation</h3>
+                                    <p class="mb-2">1.1 <strong>Booking Confirmation:</strong> All travel bookings are subject to availability and confirmation. Once confirmed, you’ll receive a booking reference number and an itinerary via email.</p>
+                                    <p class="mb-2">1.2 <strong>Age Requirement:</strong> You must be at least 18 years old to make a booking. Minors traveling alone must have written consent from a parent or guardian.</p>
+                                    <p class="mb-2">1.3 <strong>Payment Requirements:</strong> Bookings require full or partial payment at the time of confirmation, with the remaining balance due [insert number of days] before departure.</p>
+                                </section>
+                            
+                                <!-- Section 3: Pricing and Payment -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">2. Pricing and Payment</h3>
+                                    <p class="mb-2">2.1 <strong>Pricing Policy:</strong> Prices are displayed in [insert currency] and may fluctuate based on demand, availability, and currency changes.</p>
+                                    <p class="mb-2">2.2 <strong>Payment Methods:</strong> We accept [list accepted payment methods: credit cards, PayPal, bank transfers, etc.].</p>
+                                    <p class="mb-2">2.3 <strong>Taxes and Fees:</strong> Additional taxes or surcharges may apply and will be outlined during booking.</p>
+                                </section>
+                            
+                                <!-- Section 4: Cancellation and Refund Policy -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">3. Cancellation and Refund Policy</h3>
+                                    <p class="mb-2">3.1 <strong>Cancellation by Customer:</strong> You may cancel by contacting us. Cancellations are subject to fees based on the timeline.</p>
+                                    <p class="mb-2">3.2 <strong>Cancellation by Travel the World:</strong> In rare cases, we may cancel bookings due to unforeseen circumstances, in which case a full refund or alternative arrangements will be offered.</p>
+                                    <p class="mb-2">3.3 <strong>Refunds:</strong> Refunds are processed within [number of days] business days.</p>
+                                </section>
+                            
+                                <!-- Section 5: Changes and Modifications -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">4. Changes and Modifications</h3>
+                                    <p class="mb-2">4.1 <strong>Changes by Customer:</strong> Contact us for any booking changes; additional fees may apply.</p>
+                                    <p class="mb-2">4.2 <strong>Changes by Travel the World:</strong> We may modify itineraries due to unforeseen circumstances.</p>
+                                </section>
+                            
+                                <!-- Section 6: Travel Insurance -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">5. Travel Insurance</h3>
+                                    <p class="mb-2">We recommend all travelers purchase comprehensive travel insurance to cover unexpected events. Travel the World is not liable for costs incurred due to the lack of travel insurance.</p>
+                                </section>
+                            
+                                <!-- Section 7: Liability and Limitations -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">6. Liability and Limitations</h3>
+                                    <p class="mb-2">6.1 <strong>Third-Party Services:</strong> We work with reputable third-party providers but are not liable for their actions.</p>
+                                    <p class="mb-2">6.2 <strong>Travel Risks:</strong> You acknowledge that travel carries inherent risks. We are not responsible for any injury, illness, or loss during your trip.</p>
+                                </section>
+                            
+                                <!-- Section 8: Intellectual Property -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">7. Intellectual Property</h3>
+                                    <p class="mb-2">All content on our website is the intellectual property of Travel the World or our licensors. You may not use our content without written permission.</p>
+                                </section>
+                            
+                                <!-- Section 9: Privacy and Data Security -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">8. Privacy and Data Security</h3>
+                                    <p class="mb-2">We respect your privacy and are committed to protecting your personal information. By using our services, you consent to our data collection and processing practices as outlined in our <a href="#" class="text-blue-600 underline">Privacy Policy</a>.</p>
+                                </section>
+                            
+                                <!-- Section 10: Governing Law -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">9. Governing Law</h3>
+                                    <p class="mb-2">These terms are governed by the laws of [insert applicable jurisdiction]. Disputes will be resolved in the courts of [insert jurisdiction].</p>
+                                </section>
+                            
+                                <!-- Section 11: Contact Information -->
+                                <section class="p-4 border-t">
+                                    <h3 class="text-xl font-semibold mb-2">10. Contact Information</h3>
+                                    <p class="mb-2">For questions or concerns, contact us at:</p>
+                                    <p class="mb-2">Email: <a href="mailto:[insert email]" class="text-blue-600 underline">[insert email address]</a></p>
+                                    <p class="mb-2">Phone: [insert phone number]</p>
+                                    <p class="mb-2">Address: [insert physical address]</p>
+                                </section>
+                            </article>
+                            
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    feedback
+                                </span>
+                                Send Feedback
+                            </button>
+                        </li>
+                        <li>
+                            <button class="p-2 w-full flex gap-1 rounded-lg">
+                                <span class="material-symbols-rounded">
+                                    info
+                                </span>
+                                About
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Developer preferences-->
+            </section>
+        </section>
+
+        <!-- ChatBot -->
+        <section class="hidden relative sections-js chatbot-section sm:bg-white sm:rounded-3xl" id="page-8">
+            <section class="chatbot p-2">
+                <!-- Bot Header -->
+                <section class="bg-white px-2 py-1 border sm:p3 lg:p-4 flex gap-2 items-center justify-between rounded-full">
+                    <article class="flex gap-2 items-center">
+                        <h3 class="order-2 font-semibold">BEMAX</h3>
+                        <img src="../../social-media-assets/chatbot-assests/BEMEX.jpg" alt="A illustration of a metalic robot known as BEMAX" class="rounded-full order-1 w-9 h-9 sm:w-10 sm:h-10 object-cover">
+                    </article>
+                    <ul class="text-sm flex gap-2 ">
+                        <li>
+                            <button class="border p-2 rounded-full" id="bot-get-keyword-btn">Get keywords</button>
+                        </li>
+                        <li>
+                            <button class="border p-2 rounded-full sm:hidden" id="bot-back-button">
+                                Back
+                            </button>
+                        </li>
+                    </ul>
+                    
+                </section>
+                <!-- Chat -->
+                <section class="border mt-3 rounded-3xl sm:overflow-y-auto">
+                    <article class="flex flex-col gap-5 sm:p-3 pb-32 sm:overflow-y-auto" id="chat-output"></article>
+                </section>
+                <!-- user Mesenger -->
+                <section class="fixed bottom-0 sm:bottom-5 lg:bottom-8 xl:bottom-0 left-0 w-full">
+                    <div class="relative border p-3 sm:pb-15 flex justify-center items-center gap-5 bg-white sm:bg-transparent">
+                        <button class="flex mb-2 border rounded-2xl sm:p-2 p-1 sm:relative">
+                            <span class="material-symbols-rounded">
+                                mood
+                            </span>
+                        </button>
+
+                        <input type="text" class="w-full sm:w-60 md:w-72 lg:w-1/2 border rounded-3xl lg:mb-2 sm:py-2 sm:px-5 py-1 px-6 sm:relative" placeholder="Enter Your Message...." id="users-message">
+
+                        <ul class="flex justify-center items-center gap-3 mb-2  sm:relative">
+                            <li>
+                                <button class="flex border rounded-2xl sm:p-2 p-1">
+                                    <span class="material-symbols-rounded">
+                                        attach_file
+                                    </span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="flex border rounded-2xl sm:p-2 p-1" id="send-btn">
+                                    <span class="material-symbols-rounded">
+                                        send
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>
+            </section>
+        </section>
+    </main>
+
+
+    <script src="../../scripts/socialmedia.js" defer></script>
+</body>
+</html>

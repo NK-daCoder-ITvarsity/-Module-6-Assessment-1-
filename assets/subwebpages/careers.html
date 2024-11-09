@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel The World | Careers</title>
+    <!-- output is our generated tailwind css -->
+    <link rel="stylesheet" href="../../output.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="../../assets/effect-utils/custom-effect.css"/>
+    <script src="../scripts/createResume.js" defer></script>
+</head>
+<body class="bg-gray-200">
+    <header class="w-screen flex justify-center z-50 fixed top-0 left-0 text-white bg-top-color-bottom-transparent">
+        <!-- Desktop -->
+        <nav class="desktop justify-between hidden p-3 sm:flex container md:flex sm:mx-auto">
+            <a href="../../index.html" class="font-semibold">Logo</a>
+            <ul class="flex gap-10 ">
+                <li>
+                    <button class="font-semibold" id="discovery-btn">Discover +</button>
+                    <section id="discover-ul-desktop" class="hidden fixed bg-transparent--black left-0 top-0 w-screen h-screen p-4 overflow-y-auto">
+                        <button class="bg-white font-semibold text-xl fixed bottom-4 right-4 rounded-full flex p-5 shadow-lg text-black z-50" id="nav-close-btn-desktop">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                        <ul class="">
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Seasonal Traveller<span>+</span></button>
+                                    
+                                    <ul class="grid grid-cols-4 overflow-y-auto p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/summer.html" class="relative card-link">
+                                                <img src="../../assets/seasons/summer.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Summer Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/autumn.html" class="relative card-link">
+                                                <img src="../../assets/seasons/autumn.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Autumn Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/winter.html" class="relative card-link">
+                                                <img src="../../assets/seasons/winter.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Winter Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/seasons/spring.html" class="relative card-link">
+                                                <img src="../../assets/seasons/spring.jpeg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Spring Traveller</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Trending Places<span>+</span></button>
+                                    <ul class="grid grid-cols-4 overflow-y-auto p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/japan.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/japan/shrine-gates.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition treending flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Japan</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/italy.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/italy/culture.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition treending flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Italy</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/egypt.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/egypt/egyptian.jpeg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex treending justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Egypt</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/paris.html" class="relative card-link">
+                                                <img src="../../assets/home-page/start-your-journey/paris/lights.jpg" alt="" class="w-full h-full object-cover">
+                                                <article class="article-transition flex treending justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Paris</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <button class="text-2xl">Travel Themes<span>+</span></button>
+                                    <ul class="grid grid-cols-4 overflow-y-hidden p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/traveller/solo-traveller.html" class="relative card-link">
+                                                <img src="../../assets/home-page/type-traveller/solo-traveller.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition theme-traveller flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Solo Travel</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/traveller/family-vacation.html" class="relative card-link">
+                                                <img src="../../assets/home-page/type-traveller/family-vacation.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition theme-traveller flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Family Vacations</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/traveller/honeymoon-spots.html" class="relative card-link">
+                                                <img src="../../assets/home-page/type-traveller/honeymoon.jpg" alt="" class="w-full h-80 object-cover">
+                                                <article class="article-transition flex theme-traveller justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl text-center">Honeymoon Spots</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                            
+                            <li>
+                                <article>
+                                    <h5 class="text-2xl">Hidden Gems<span>+</span></h5>
+                                    <ul class="grid grid-cols-4 overflow-y-hidden p-4">
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/Chefchaouen.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/Chefchaouen.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Chefchaouen</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/HallState.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/hallstate.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">HallState</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/Jioufen.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/Jioufen.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Jioufen</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="../../assets/subwebpages/hidden-gems/Sibiu.html" class="relative card-link">
+                                                <img src="../../assets/home-page/lesser-known-destinations/sibiu.jpg" alt="" class="w-full h-72 object-cover">
+                                                <article class="article-transition lesser-known-location flex justify-center items-center">
+                                                    <h1 class="font-semibold text-3xl">Sibiu</h1>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+                <li>
+                    <a href="../../assets/subwebpages/about.html" class="font-semibold">Who Are We</a>
+                </li>
+                <li>
+                    <a href="../../assets/subwebpages/community-blog/blog.html" class="font-semibold">Our Community</a>
+                </li>
+            </ul>
+            <ul class="flex gap-4">
+                <li>
+                    <button class="cursor-pointer">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../assets/subwebpages/booking.html" class="font-semibold p-1 outline-white text-white rounded-full ">
+                        Start Planning
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Mobile -->
+        <nav class="mobile-nav flex justify-between p-3 sm:hidden w-full ">
+            <button class="z-10" id="burger-menu">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <button class="z-10 hidden sm:hidden" id="cancle-menu-button">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <ul class="nav-transition fixed -left-96 top-0 h-screen w-screen bg-black z-0 flex flex-col pt-28 pb-5 px-6 gap-4 overflow-y-auto" id="mobile-nav-items">
+                <li class="border-b-2">
+                    <button class="pb-1 flex gap-1 font-semibold main-nav-btn" data-page="discover-btn">
+                        Discover 
+                        <span>
+                            +
+                        </span>
+                    </button>
+                    <ul class="pl-3 flex flex-col gap-3 h-0 transition-height overflow-y-auto main-dropdown" id="discover-btn">
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="seasonal-traveller">Seasonal Travel <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="seasonal-traveller">
+                                    <li><a href="./summer.html">Summer</a></li>
+                                    <li><a href="./autumn.html">Autumn</a></li>
+                                    <li><a href="./winter.html">Winter</a></li>
+                                    <li><a href="./spring.html">Springs</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="trendy-places">Trending Places <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="trendy-places">
+                                    <li><a href="../../assets/subwebpages/japan.html">Japan</a></li>
+                                    <li><a href="../../assets/subwebpages/egypt.html">Egypt</a></li>
+                                    <li><a href="../../assets/subwebpages/italy.html">Italy</a></li>
+                                    <li><a href="../../assets/subwebpages/paris.html">Paris</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="travel-themes">Travel Themes <span>+</span></button>
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown" id="travel-themes">
+                                    <li><a href="../subwebpages/traveller/solo-traveller.html">Solo Traveller</a></li>
+                                    <li><a href="../subwebpages/traveller/honeymoon-spots.html">Honeymoon Spots</a></li>
+                                    <li><a href="../subwebpages/traveller/family-vacation.html">Family Vacation</a></li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="flex flex-col gap-2">
+                                <button class="text-left font-semibold discovery-sub-btns" data-page="hidden-gems">Hidden Gems <span>+</span></button>
+
+                                <ul class="h-0 overflow-y-auto border-b transition-height discovery-sub-btn-dropdown mb-3" id="hidden-gems">
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/Chefchaouen.html">
+                                            Chefchaouen
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/HallState.html">
+                                            HallState
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/Jioufen.html">
+                                            Jioufen
+                                        </a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="../../assets/subwebpages/hidden-gems/Sibiu.html">
+                                            Sibiu
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="border-b-2">
+                    <a href="../../assets/subwebpages/about.html" class="font-semibold pb-1">Who Are We</a>
+                </li>
+                <li class="border-b-2">
+                    <a href="../../assets/subwebpages/community-blog/blog.html" class="font-semibold pb-1">Our Community</a>
+                </li>
+            </ul>
+
+            <a href="" class="z-10">Logo</a>
+            
+            <ul class="flex gap-3 z-10">
+                <li>
+                    <button>
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+    <main>
+        <article class="bg-white mt-10 sm:mt-0 pb-9 pt-10 sm:pt-20 h-full">
+            <section class="h-full grid grid-cols-1 lg:grid-cols-2 container mx-auto">
+                <article class="order-2 sm:order-1 h-full flex flex-col justify-center gap-2 lg:gap-9">
+                    <h1 class="px-1 w-full text-center lg:text-left text-4xl sm:text-6xl md:text-7xl font-semibold text-transparent bg-clip-text bg-gradient-to-tl from-purple-800 to-purple-400">Careers at Travel the World</h1>
+                    <p class="lg:text-2xl text-purple-400 text-center lg:text-left px-2">Become a part of our vibrant, globe-trotting team, with our job listings</p>
+                    <ul class="flex gap-3 items-center justify-center lg:justify-start md:mt-6 lg:mt-3">
+                        <li><a href="#joblisting" class="border-2 font-semibold border-purple-600 rounded-full text-center w-1/4 p-3 text-purple-600">Job Listings</a></li>
+                        <li>
+                            <button class="border-2 font-semibold border-purple-600 rounded-full text-center p-3 text-purple-600" id="create-resume-btn">
+                                Create Your Resume
+                            </button>
+                        </li>
+                    </ul>
+                </article>
+               
+                <img src="../illustrations/38aa0ad2-67f8-40b1-980c-acb01a526ae1.png" alt="" aria-label="" class="block order-1 sm:order-2 w-full lg:max-w-7xl object-cover sm:object-fill lg:object-cover custom-drop-shadow">
+                
+            </section>
+            <!-- trusted partners-->
+            <section class="mt-8 p-2 overflow-x-hidden">
+                <ul class="flex justify-evenly items-center container mx-auto gap-3 filter grayscale z-0 logo-auto-run">
+                    <li><img src="../../assets/home-page/partner-logos/IATA.svg" alt=""></li>
+                    <li><img src="../../assets/home-page/partner-logos/TRAVEL-LESURE.svg" alt=""></li>
+                    <li><img src="../../assets/home-page/partner-logos/virtuous-member.svg" alt=""></li>
+                    <li><img src="../../assets/home-page/partner-logos/pentravel-logo@1x.png" alt="pentravel"></li>
+                </ul>
+            </section>
+            
+        </article>
+        <!-- Job listing-->
+        <article class="mt-8">
+            <section class="mx-auto container flex flex-col gap-5 justify-center items-center">
+                <h1 class="mt-20 p-4 text-5xl sm:text-6xl md:text-7xl font-semibold text-transparent bg-clip-text bg-gradient-to-tl from-purple-800 to-purple-400">Job Listings</h1>
+                <section class="flex items-center justify-center bg-white border rounded-full md:w-1/2">
+                    <input type="search" placeholder="Search For A Job:" class="h-full w-full p-4 bg-transparent" id="search-bar">
+                    <button class="h-16 bg-purple-600 text-white rounded-tr-full rounded-br-full grid items-center justify-center w-16">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </section>
+            </section>
+            <section class="mt-8 container mx-auto">
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-5" id="job-list">
+                    <li class="ul-job-list-items" data-title="Tour Guide">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Tour Guide</h2>
+                            <p class="text-gray-600">Location: New York</p>
+                            <p class="text-gray-600">Salary: $50,000/year</p>
+            
+                            <!-- Dropdown content for job details -->
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: As a tour guide, you'll be responsible for guiding tourists through the most popular spots in New York.</p>
+                                <p class="text-gray-700">Requirements: 2+ years experience in tourism, strong communication skills, knowledge of local attractions.</p>
+                                <p class="text-gray-700">Salary: $50,000/year plus bonuses.</p>
+                            </div>
+
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+                    </li>
+                    <li class="ul-job-list-items" data-title="Travel Agent">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Travel Agent</h2>
+                            <p class="text-gray-600">Location: London</p>
+                            <p class="text-gray-600">Salary: £35,000/year</p>
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+            
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: Helping clients with travel bookings, ensuring smooth travel experiences.</p>
+                                <p class="text-gray-700">Requirements: Excellent organizational skills, experience with travel bookings, 3+ years in a similar role.</p>
+                                <p class="text-gray-700">Salary: £35,000/year plus commissions.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="ul-job-list-items" data-title="Travel Consultant">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Travel Consultant</h2>
+                            <p class="text-gray-600">Location: Paris</p>
+                            <p class="text-gray-600">Salary: €70,000/year</p>
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+                        
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: Design bespoke luxury travel experiences for high-end clients, providing 24/7 concierge service.</p>
+                                <p class="text-gray-700">Requirements: 5+ years in luxury travel, exceptional customer service, fluent in French and English.</p>
+                                <p class="text-gray-700">Salary: €70,000/year plus commissions and perks like exclusive hotel stays.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="ul-job-list-items" data-title="Travel Specialist">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Travel Specialist</h2>
+                            <p class="text-gray-600">Location: Cape Town</p>
+                            <p class="text-gray-600">Salary: R550,000/year</p>
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+                        
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: Plan and coordinate outdoor and extreme adventure trips, from safaris to mountain trekking.</p>
+                                <p class="text-gray-700">Requirements: Strong knowledge of adventure sports, experience in outdoor travel, CPR certification preferred.</p>
+                                <p class="text-gray-700">Salary: R550,000/year plus bonus based on successful trip bookings.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="ul-job-list-items" data-title="Wedding Coordinator">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Wedding Coordinator</h2>
+                            <p class="text-gray-600">Location: Bali</p>
+                            <p class="text-gray-600">Salary: $60,000/year</p>
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+                        
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: Organize stunning destination weddings, managing everything from venue selection to guest travel arrangements.</p>
+                                <p class="text-gray-700">Requirements: 3+ years in event planning, strong attention to detail, knowledge of popular wedding destinations.</p>
+                                <p class="text-gray-700">Salary: $60,000/year plus a percentage of wedding booking fees.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="ul-job-list-items" data-title="Digital Nomad Travel Planner">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Digital Nomad Travel Planner</h2>
+                            <p class="text-gray-600">Location: Remote (Work from Anywhere)</p>
+                            <p class="text-gray-600">Salary: $45,000/year</p>
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+                        
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: Assist remote workers in planning travel-friendly work setups across different countries and cities.</p>
+                                <p class="text-gray-700">Requirements: Familiarity with co-working spaces, excellent organizational skills, experience working remotely.</p>
+                                <p class="text-gray-700">Salary: $45,000/year with additional travel perks and discounts.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="ul-job-list-items" data-title="Cruise Ship Entertainment Coordinator">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-semibold mb-2">Cruise Ship Entertainment Coordinator</h2>
+                            <p class="text-gray-600">Location: Miami</p>
+                            <p class="text-gray-600">Salary: $55,000/year</p>
+                            <button class="mt-4 text-blue-500 font-semibold focus:outline-none">Learn More</button>
+                        
+                            <div class="dropdown-content hidden mt-4">
+                                <p class="text-gray-700">Details: Plan and manage entertainment activities aboard cruise ships, including shows, events, and parties.</p>
+                                <p class="text-gray-700">Requirements: Experience in event management, creativity, and ability to work in a fast-paced environment.</p>
+                                <p class="text-gray-700">Salary: $55,000/year plus opportunities to travel on cruise lines around the world.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Create a Resume -->
+        <section class="fixed top-0 left-0 w-full h-screen bg-white z-50 p-3 items-center hidden" id="create-resume-form">
+            <article class="mx-auto container relative bg-white overflow-y-auto article-size rounded-lg lg:w-1/2 border p-4">
+                <h1 class="text-4xl text-center p-3 font-semibold text-transparent bg-clip-text bg-gradient-to-tl from-purple-800 to-purple-400">
+                    Create A Resume
+                </h1>
+                <form action="" class="p-3 grid gap-2">
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Name:</label>
+                        <input type="text" id="first-name" class="border mt-2 p-2" placeholder="Branda">
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Surname:</label>
+                        <input type="text" id="first-name" class="border mt-2 p-2" placeholder="Rolisa">
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Address:</label>
+                        <input type="text" id="first-name" class="border mt-2 p-2" placeholder="123 Anywhere-Str. Any City">
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Phone:</label>
+                        <input type="tel" id="first-name" class="border mt-2 p-2" placeholder="+27 123 456 7891">
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Education</label>
+                        <input type="text" placeholder="Oxford University" class="border mt-2 p-2"/>
+                        <button type="button " class="bg-purple-600 text-white p-2 w-36 rounded-md">Add Field</button>
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Expertise:</label>
+                        <input type="text" id="first-name" class="border mt-2 p-2" placeholder="Expertise...">
+                        <button type="button"  class="bg-purple-600 text-white p-2 w-36 rounded-md">Add Field</button>
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">Jobs You worked at (optional):</label>
+                        <input type="tel" id="first-name" class="border mt-2 p-2" placeholder="Teacher...">
+                        <button  type="button" class="bg-purple-600 text-white p-2 w-36 rounded-md">Add Field</button>
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">What Languages You Speak</label>
+                        <select id="job-listing" class="w-full mt-2 p-2 border rounded-md focus:outline-none" required>
+                            <option value="ab" lang="ab">Abkhazian</option>
+                                <option value="aa" lang="aa">Afar</option>
+                                <option value="af" lang="af">Afrikaans</option>
+                                <option value="ak" lang="ak">Akan</option>
+                                <option value="sq" lang="sq">Albanian</option>
+                                <option value="am" lang="am">Amharic</option>
+                                <option value="ar" lang="ar">Arabic</option>
+                                <option value="an" lang="an">Aragonese</option>
+                                <option value="hy" lang="hy">Armenian</option>
+                                <option value="as" lang="as">Assamese</option>
+                                <option value="av" lang="av">Avaric</option>
+                                <option value="ae" lang="ae">Avestan</option>
+                                <option value="ay" lang="ay">Aymara</option>
+                                <option value="az" lang="az">Azerbaijani</option>
+                                <option value="bm" lang="bm">Bambara</option>
+                                <option value="ba" lang="ba">Bashkir</option>
+                                <option value="eu" lang="eu">Basque</option>
+                                <option value="be" lang="be">Belarusian</option>
+                                <option value="bn" lang="bn">Bengali (Bangla)</option>
+                                <option value="bh" lang="bh">Bihari</option>
+                                <option value="bi" lang="bi">Bislama</option>
+                                <option value="bs" lang="bs">Bosnian</option>
+                                <option value="br" lang="br">Breton</option>
+                                <option value="bg" lang="bg">Bulgarian</option>
+                                <option value="my" lang="my">Burmese</option>
+                                <option value="ca" lang="ca">Catalan</option>
+                                <option value="ch" lang="ch">Chamorro</option>
+                                <option value="ce" lang="ce">Chechen</option>
+                                <option value="ny" lang="ny">Chichewa, Chewa, Nyanja</option>
+                                <option value="zh" lang="zh">Chinese</option>
+                                <option value="zh-Hans" lang="zh-Hans">Chinese (Simplified)</option>
+                                <option value="zh-Hant" lang="zh-Hant">Chinese (Traditional)</option>
+                                <option value="cv" lang="cv">Chuvash</option>
+                                <option value="kw" lang="kw">Cornish</option>
+                                <option value="co" lang="co">Corsican</option>
+                                <option value="cr" lang="cr">Cree</option>
+                                <option value="hr" lang="hr">Croatian</option>
+                                <option value="cs" lang="cs">Czech</option>
+                                <option value="da" lang="da">Danish</option>
+                                <option value="dv" lang="dv">Divehi, Dhivehi, Maldivian</option>
+                                <option value="nl" lang="nl">Dutch</option>
+                                <option value="dz" lang="dz">Dzongkha</option>
+                                <option value="en" lang="en">English</option>
+                                <option value="eo" lang="eo">Esperanto</option>
+                                <option value="et" lang="et">Estonian</option>
+                                <option value="ee" lang="ee">Ewe</option>
+                                <option value="fo" lang="fo">Faroese</option>
+                                <option value="fj" lang="fj">Fijian</option>
+                                <option value="fi" lang="fi">Finnish</option>
+                                <option value="fr" lang="fr">French</option>
+                                <option value="ff" lang="ff">Fula, Fulah, Pulaar, Pular</option>
+                                <option value="gl" lang="gl">Galician</option>
+                                <option value="gd" lang="gd">Gaelic (Scottish)</option>
+                                <option value="gv" lang="gv">Gaelic (Manx)</option>
+                                <option value="ka" lang="ka">Georgian</option>
+                                <option value="de" lang="de">German</option>
+                                <option value="el" lang="el">Greek</option>
+                                <option value="kl" lang="kl">Greenlandic</option>
+                                <option value="gn" lang="gn">Guarani</option>
+                                <option value="gu" lang="gu">Gujarati</option>
+                                <option value="ht" lang="ht">Haitian Creole</option>
+                                <option value="ha" lang="ha">Hausa</option>
+                                <option value="he" lang="he">Hebrew</option>
+                                <option value="hz" lang="hz">Herero</option>
+                                <option value="hi" lang="hi">Hindi</option>
+                                <option value="ho" lang="ho">Hiri Motu</option>
+                                <option value="hu" lang="hu">Hungarian</option>
+                                <option value="is" lang="is">Icelandic</option>
+                                <option value="io" lang="io">Ido</option>
+                                <option value="ig" lang="ig">Igbo</option>
+                                <option value="id" lang="id">Indonesian</option>
+                                <option value="ia" lang="ia">Interlingua</option>
+                                <option value="ie" lang="ie">Interlingue</option>
+                                <option value="iu" lang="iu">Inuktitut</option>
+                                <option value="ik" lang="ik">Inupiak</option>
+                                <option value="ga" lang="ga">Irish</option>
+                                <option value="it" lang="it">Italian</option>
+                                <option value="ja" lang="ja">Japanese</option>
+                                <option value="jv" lang="jv">Javanese</option>
+                                <option value="kn" lang="kn">Kannada</option>
+                                <option value="kr" lang="kr">Kanuri</option>
+                                <option value="ks" lang="ks">Kashmiri</option>
+                                <option value="kk" lang="kk">Kazakh</option>
+                                <option value="km" lang="km">Khmer</option>
+                                <option value="ki" lang="ki">Kikuyu</option>
+                                <option value="rw" lang="rw">Kinyarwanda (Rwanda)</option>
+                                <option value="rn" lang="rn">Kirundi</option>
+                                <option value="ky" lang="ky">Kyrgyz</option>
+                                <option value="kv" lang="kv">Komi</option>
+                                <option value="kg" lang="kg">Kongo</option>
+                                <option value="ko" lang="ko">Korean</option>
+                                <option value="ku" lang="ku">Kurdish</option>
+                                <option value="kj" lang="kj">Kwanyama</option>
+                                <option value="lo" lang="lo">Lao</option>
+                                <option value="la" lang="la">Latin</option>
+                                <option value="lv" lang="lv">Latvian (Lettish)</option>
+                                <option value="li" lang="li">Limburgish (Limburger)</option>
+                                <option value="ln" lang="ln">Lingala</option>
+                                <option value="lt" lang="lt">Lithuanian</option>
+                                <option value="lu" lang="lu">Luga-Katanga</option>
+                                <option value="lg" lang="lg">Luganda, Ganda</option>
+                                <option value="lb" lang="lb">Luxembourgish</option>
+                                <option value="mk" lang="mk">Macedonian</option>
+                                <option value="mg" lang="mg">Malagasy</option>
+                                <option value="ms" lang="ms">Malay</option>
+                                <option value="ml" lang="ml">Malayalam</option>
+                                <option value="mt" lang="mt">Maltese</option>
+                                <option value="mi" lang="mi">Maori</option>
+                                <option value="mr" lang="mr">Marathi</option>
+                                <option value="mh" lang="mh">Marshallese</option>
+                                <option value="mn" lang="mn">Mongolian</option>
+                                <option value="na" lang="na">Nauru</option>
+                                <option value="nv" lang="nv">Navajo</option>
+                                <option value="ng" lang="ng">Ndonga</option>
+                                <option value="nd" lang="nd">Northern Ndebele</option>
+                                <option value="ne" lang="ne">Nepali</option>
+                                <option value="no" lang="no">Norwegian</option>
+                                <option value="nb" lang="nb">Norwegian bokmål</option>
+                                <option value="nn" lang="nn">Norwegian nynorsk</option>
+                                <option value="ii" lang="ii">Nuosu</option>
+                                <option value="oc" lang="oc">Occitan</option>
+                                <option value="oj" lang="oj">Ojibwe</option>
+                                <option value="cu" lang="cu">Old Church Slavonic, Old Bulgarian</option>
+                                <option value="or" lang="or">Oriya</option>
+                                <option value="om" lang="om">Oromo (Afaan Oromo)</option>
+                                <option value="os" lang="os">Ossetian</option>
+                                <option value="pi" lang="pi">Pāli</option>
+                                <option value="ps" lang="ps">Pashto, Pushto</option>
+                                <option value="fa" lang="fa">Persian (Farsi)</option>
+                                <option value="pl" lang="pl">Polish</option>
+                                <option value="pt" lang="pt">Portuguese</option>
+                                <option value="pa" lang="pa">Punjabi (Eastern)</option>
+                                <option value="qu" lang="qu">Quechua</option>
+                                <option value="rm" lang="rm">Romansh</option>
+                                <option value="ro" lang="ro">Romanian</option>
+                                <option value="ru" lang="ru">Russian</option>
+                                <option value="se" lang="se">Sami</option>
+                                <option value="sm" lang="sm">Samoan</option>
+                                <option value="sg" lang="sg">Sango</option>
+                                <option value="sa" lang="sa">Sanskrit</option>
+                                <option value="sr" lang="sr">Serbian</option>
+                                <option value="sh" lang="sh">Serbo-Croatian</option>
+                                <option value="st" lang="st">Sesotho</option>
+                                <option value="tn" lang="tn">Setswana</option>
+                                <option value="sn" lang="sn">Shona</option>
+                                <option value="sd" lang="sd">Sindhi</option>
+                                <option value="si" lang="si">Sinhalese</option>
+                                <option value="ss" lang="ss">Siswati</option>
+                                <option value="sk" lang="sk">Slovak</option>
+                                <option value="sl" lang="sl">Slovenian</option>
+                                <option value="so" lang="so">Somali</option>
+                                <option value="nr" lang="nr">Southern Ndebele</option>
+                                <option value="es" lang="es">Spanish</option>
+                                <option value="su" lang="su">Sundanese</option>
+                                <option value="sw" lang="sw">Swahili (Kiswahili)</option>
+                                <option value="sv" lang="sv">Swedish</option>
+                                <option value="tl" lang="tl">Tagalog</option>
+                                <option value="ty" lang="ty">Tahitian</option>
+                                <option value="tg" lang="tg">Tajik</option>
+                                <option value="ta" lang="ta">Tamil</option>
+                                <option value="tt" lang="tt">Tatar</option>
+                                <option value="te" lang="te">Telugu</option>
+                                <option value="th" lang="th">Thai</option>
+                                <option value="bo" lang="bo">Tibetan</option>
+                                <option value="ti" lang="ti">Tigrinya</option>
+                                <option value="to" lang="to">Tonga</option>
+                                <option value="ts" lang="ts">Tsonga</option>
+                                <option value="tr" lang="tr">Turkish</option>
+                                <option value="tk" lang="tk">Turkmen</option>
+                                <option value="tw" lang="tw">Twi</option>
+                                <option value="ug" lang="ug">Uyghur</option>
+                                <option value="uk" lang="uk">Ukrainian</option>
+                                <option value="ur" lang="ur">Urdu</option>
+                                <option value="uz" lang="uz">Uzbek</option>
+                                <option value="ve" lang="ve">Venda</option>
+                                <option value="vi" lang="vi">Vietnamese</option>
+                                <option value="vo" lang="vo">Volapük</option>
+                                <option value="wa" lang="wa">Wallon</option>
+                                <option value="cy" lang="cy">Welsh</option>
+                                <option value="wo" lang="wo">Wolof</option>
+                                <option value="fy" lang="fy">Western Frisian</option>
+                                <option value="xh" lang="xh">Xhosa</option>
+                                <option value="yi" lang="yi">Yiddish</option>
+                                <option value="yo" lang="yo">Yoruba</option>
+                                <option value="za" lang="za">Zhuang, Chuang</option>
+                                <option value="zu" lang="zu">Zulu</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="flex flex-col gap-1">
+                        <label for="first-name">What You are Applying for:</label>
+                        <select id="job-listing" class="w-full mt-2 p-2 border rounded-md focus:outline-none" required>
+                            <option value="">-- Select a Job Listing --</option>
+                            <option value="Travel Consultant">Travel Consultant</option>
+                            <option value="Destination Manager">Destination Manager</option>
+                            <option value="Customer Service Specialist">Customer Service Specialist</option>
+                            <option value="Digital Marketing Specialist">Digital Marketing Specialist</option>
+                            <option value="Tour Guide">Tour Guide</option>
+                            <option value="Account Manager">Account Manager</option>
+                            <option value="Event Coordinator">Event Coordinator</option>
+                            <option value="Sales Executive">Sales Executive</option>
+                            <option value="Travel Blogger">Travel Blogger</option>
+                            <option value="Operations Manager">Operations Manager</option>
+                            <option value="Travel Advisor">Travel Advisor</option>
+                            <option value="Social Media Coordinator">Social Media Coordinator</option>
+                        </select>
+                    </fieldset>
+
+                    <button type="submit" class="bg-purple-600 text-white w-full p-2 rounded-full mt-5">Download Resume</button>
+                </form>
+
+                <button id="create-resume-cancle-button" class="fixed top-2 left-2 border text-center bg-white shadow w-11 h-11 rounded-full grid items-center">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="bg-black p-4">
+        <!-- partners -->
+        <ul class="flex justify-evenly items-center container mx-auto gap-3 p-3 sm:p-7 filter grayscale z-0">
+            <li><img src="../../assets/home-page/partner-logos/IATA.svg" alt=""></li>
+            <li><img src="../../assets/home-page/partner-logos/TRAVEL-LESURE.svg" alt=""></li>
+            <li><img src="../../assets/home-page/partner-logos/virtuous-member.svg" alt=""></li>
+            <li><img src="../../assets/home-page/partner-logos/pentravel-logo@1x.png" alt="pentravel"></li>
+        </ul>
+
+        <!-- Catagory links -->
+        <section class="grid sm:grid-cols-4 container mx-auto">
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">Travel The World</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="../../assets/subwebpages/booking.html" class="hover:text-white">Book A Trip</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/contact.html" class="hover:text-white">Get In Touch</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">Useful Information</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="../../assets/subwebpages/about.html" class="hover:text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/FAQ.html" class="hover:text-white">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/careers.html" class="hover:text-white">Careers</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/sustainability.html" class="hover:text-white">Sustainability</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">Popular destinations</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="../../assets/subwebpages/japan.html" class="hover:text-white">Japan</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/iceland.html" class="hover:text-white">Iceland</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/italy.html" class="hover:text-white">Italy</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/morocco.html" class="hover:text-white">Morocco</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/egypt.html" class="hover:text-white">Acient Egypt</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/mount-golgotha.html" class="hover:text-white">Golgotha</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="text-white">
+                <h3 class="mb-2 text-lg mt-3">What</h3>
+                <ul class="grid gap-1 text-gray-400">
+                    <li>
+                        <a href="../../assets/subwebpages/unusial-trips.html" class="hover:text-white">Unusual</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/james-bond-adventures.html" class="hover:text-white">James Bond Adventures</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/eclipse.html" class="hover:text-white">Eclipse</a>
+                    </li>
+                    <li>
+                        <a href="../../assets/subwebpages/field-trip.html" class="hover:text-white">Field Trip</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- address -->
+        <section class="text-white mt-8 container mx-auto">
+            <h3 class="text-lg mb-4">Travel the World Headquarters</h3>
+            <address class="grid gap-3 text-gray-400">
+                <section>
+                    <h4 class="inline"><strong>Address:</strong></h4>
+                    <p class="inline ">22 Kensington Gardens,
+                    London, United Kingdom,
+                    W8 4QP</p>
+                </section>
+
+                <section>
+                    <h4 class="inline"><strong>Telephone:</strong></h4>
+                    <p class="inline ">+44 20 7946 0000</p>
+                </section>
+    
+                <section>
+                    <h4 class="inline"><strong>Email: </strong></h4>
+                    <p class="underline inline ">info@travelTheWorld.com</p>
+                </section>
+
+            </address>
+        </section>
+
+        <!-- copyright -->
+        <section class="text-white mt-8 flex justify-evenly">
+            <h3 class="block w-full">&copy Travel The World 2024</h3>
+            <ul class="flex justify-end gap-2 w-full">
+                <li><a href=""><img src="../../assets/icons/icons8-facebook.svg" alt="facebook" aria-label="follow us on facebook"></a></li>
+                <li><a href=""><img src="../../assets/icons/icons8-instagram.svg" alt="instagram" aria-label="follow us on instagram"></a></li>
+                <li><a href=""><img src="../../assets/icons/icons8-twitterx (1).svg" alt="x" aria-label="follow us on x"></a></li>
+                <li><a href=""><img src="../../assets/icons/icons8-youtube.svg" alt="youtube" aria-label="subscribe to us on youtube"></a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../../app.js" defer></script>
+</body>
+</html>

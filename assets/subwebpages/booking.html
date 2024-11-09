@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel The World | Book A Trip</title>
+    <link rel="stylesheet" href="../../output.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,-25" />
+    <link rel="stylesheet" href="../../assets/effect-utils/custom-effect.css"/>
+</head>
+<body>
+    <!-- Booking Form -->
+  <form class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">Travel The World - Booking Form</h2>
+    
+    <!-- Customer Information -->
+    <fieldset class="mb-6">
+      <legend class="text-lg font-semibold mb-4 text-gray-700">Customer Information</legend>
+      
+      <label for="fullName" class="block text-gray-600 mb-2">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" class="w-full p-3 border border-gray-300 rounded mb-4" required placeholder="Enter your full name">
+      
+      <label for="email" class="block text-gray-600 mb-2">Email Address:</label>
+      <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded mb-4" required placeholder="Enter your email address">
+      
+      <label for="phone" class="block text-gray-600 mb-2">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded mb-4" required placeholder="Enter your phone number">
+    </fieldset>
+    
+    <!-- Service Type -->
+    <fieldset class="mb-6">
+      <legend class="text-lg font-semibold mb-4 text-gray-700">Service Type</legend>
+      
+      <label for="serviceType" class="block text-gray-600 mb-2">Select Service:</label>
+      <select id="serviceType" name="serviceType" class="w-full p-3 border border-gray-300 rounded mb-4" required>
+        <option value="" disabled selected>Select service</option>
+        <option value="flight">Flight</option>
+        <option value="hotel">Hotel</option>
+        <option value="carRental">Car Rental</option>
+      </select>
+    </fieldset>
+
+    <!-- Travel/Booking Details -->
+    <fieldset class="mb-6">
+      <legend class="text-lg font-semibold mb-4 text-gray-700">Booking Details</legend>
+
+      <div id="flightDetails" class="serviceDetails hidden">
+        <h4 class="text-gray-600 mb-2">Flight Information</h4>
+        
+        <label for="departureCity" class="block text-gray-600 mb-2">Departure City:</label>
+        <input type="text" id="departureCity" name="departureCity" class="w-full p-3 border border-gray-300 rounded mb-4" placeholder="Enter departure city">
+        
+        <label for="destinationCity" class="block text-gray-600 mb-2">Destination City:</label>
+        <input type="text" id="destinationCity" name="destinationCity" class="w-full p-3 border border-gray-300 rounded mb-4" placeholder="Enter destination city">
+        
+        <label for="departureDate" class="block text-gray-600 mb-2">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" class="w-full p-3 border border-gray-300 rounded mb-4">
+        
+        <label for="returnDate" class="block text-gray-600 mb-2">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate" class="w-full p-3 border border-gray-300 rounded mb-4">
+      </div>
+
+      <div id="hotelDetails" class="serviceDetails hidden">
+        <h4 class="text-gray-600 mb-2">Hotel Information</h4>
+        
+        <label for="hotelLocation" class="block text-gray-600 mb-2">Hotel Location:</label>
+        <input type="text" id="hotelLocation" name="hotelLocation" class="w-full p-3 border border-gray-300 rounded mb-4" placeholder="Enter hotel location">
+        
+        <label for="checkInDate" class="block text-gray-600 mb-2">Check-In Date:</label>
+        <input type="date" id="checkInDate" name="checkInDate" class="w-full p-3 border border-gray-300 rounded mb-4">
+        
+        <label for="checkOutDate" class="block text-gray-600 mb-2">Check-Out Date:</label>
+        <input type="date" id="checkOutDate" name="checkOutDate" class="w-full p-3 border border-gray-300 rounded mb-4">
+      </div>
+
+      <div id="carRentalDetails" class="serviceDetails hidden">
+        <h4 class="text-gray-600 mb-2">Car Rental Information</h4>
+        
+        <label for="pickupLocation" class="block text-gray-600 mb-2">Pick-Up Location:</label>
+        <input type="text" id="pickupLocation" name="pickupLocation" class="w-full p-3 border border-gray-300 rounded mb-4" placeholder="Enter pick-up location">
+        
+        <label for="pickupDate" class="block text-gray-600 mb-2">Pick-Up Date:</label>
+        <input type="date" id="pickupDate" name="pickupDate" class="w-full p-3 border border-gray-300 rounded mb-4">
+        
+        <label for="returnDateCar" class="block text-gray-600 mb-2">Return Date:</label>
+        <input type="date" id="returnDateCar" name="returnDateCar" class="w-full p-3 border border-gray-300 rounded mb-4">
+      </div>
+    </fieldset>
+    
+    <!-- Payment Information -->
+    <fieldset class="mb-6">
+      <legend class="text-lg font-semibold mb-4 text-gray-700">Payment Information</legend>
+      
+      <label for="cardName" class="block text-gray-600 mb-2">Cardholder's Name:</label>
+      <input type="text" id="cardName" name="cardName" class="w-full p-3 border border-gray-300 rounded mb-4" required placeholder="Enter name on card">
+      
+      <label for="cardNumber" class="block text-gray-600 mb-2">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" class="w-full p-3 border border-gray-300 rounded mb-4" required placeholder="Enter card number">
+      
+      <label for="expiryDate" class="block text-gray-600 mb-2">Expiry Date:</label>
+      <input type="month" id="expiryDate" name="expiryDate" class="w-full p-3 border border-gray-300 rounded mb-4" required>
+      
+      <label for="cvv" class="block text-gray-600 mb-2">CVV:</label>
+      <input type="text" id="cvv" name="cvv" class="w-full p-3 border border-gray-300 rounded mb-4" required placeholder="Enter CVV">
+    </fieldset>
+    
+    <!-- Submit Button -->
+    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition">Submit Booking</button>
+    <a href="../../index.html" class="fixed top-3 left-3 flex justify-center border rounded-full bg-white shadow-lg p-3">
+        <span class="material-symbols-rounded">
+            close
+        </span>
+    </a>
+</form>
+
+<script src="../scripts/bookings.js" defer></script>
+</body>
+</html>
